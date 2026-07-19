@@ -6,7 +6,7 @@ Nadin Radwan portfolio — Art Director, AI-Native Design.
 
 The resume page (`/resume`) serves the PDF at:
 
-`public/Nadin_Radwan_Resume.pdf`
+`public/Nadin_Radwan_Resume_07-2026.pdf`
 
 The **Download full resume (PDF)** button downloads that file directly.
 
