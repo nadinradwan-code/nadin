@@ -4,11 +4,11 @@ Nadin Radwan portfolio — Art Director, AI-Native Design.
 
 ## Resume download
 
-The resume page (`/resume`) serves the PDF at:
+The resume page (`/resume`) links to the current resume PDF on Google Drive:
 
-`public/Nadin_Radwan_Resume_07-2026.pdf`
+`https://drive.google.com/file/d/1Hm8XvD1IvHske1wAmHhPi4xNksLFEJg0/view?usp=drive_link`
 
-The **Download full resume (PDF)** button downloads that file directly.
+A local copy also lives at `public/Nadin_Radwan_Resume_07-2026.pdf`.
 
 ## Develop
 

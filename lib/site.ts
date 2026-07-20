@@ -4,7 +4,8 @@ export const site = {
   email: "hello@nadinradwan.com",
   linkedin: "https://www.linkedin.com/in/nadinradwan/",
   instagram: "https://www.instagram.com/nadinradwan/",
-  resumePdfPath: "/Nadin_Radwan_Resume_07-2026.pdf",
+  resumePdfPath:
+    "https://drive.google.com/file/d/1Hm8XvD1IvHske1wAmHhPi4xNksLFEJg0/view?usp=drive_link",
   resumePdfFilename: "Nadin_Radwan_Resume_07-2026.pdf",
 } as const;
 

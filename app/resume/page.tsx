@@ -33,7 +33,8 @@ export default function ResumePage() {
         <div className="mt-16 border-t border-[var(--border)] pt-10">
           <a
             href={site.resumePdfPath}
-            download={site.resumePdfFilename}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-[var(--foreground)] hover:underline"
           >
             <span className="font-serif text-[var(--accent)]">*</span>

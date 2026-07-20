@@ -27,7 +27,8 @@ export default function HomePage() {
           </Link>
           <a
             href={site.resumePdfPath}
-            download={site.resumePdfFilename}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-medium text-[var(--foreground)] hover:underline"
           >
             Download PDF
