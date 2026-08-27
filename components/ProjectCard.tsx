@@ -19,7 +19,7 @@ export default function ProjectCard({
   priority = false,
 }: ProjectCardProps) {
   return (
-    <Link href={href} className="group block">
+    <Link href={href} className="group block rounded-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[var(--accent)]">
       <div className="relative aspect-[4/3] overflow-hidden bg-[var(--border)]">
         <Image
           src={image}

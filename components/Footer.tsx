@@ -3,8 +3,8 @@ import { site } from "@/lib/site";
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[var(--border)] bg-[var(--background)]">
-      <div className="page-pad py-16">
+    <footer className="border-t border-[var(--border)] bg-[var(--background)] safe-bottom">
+      <div className="page-pad py-12 sm:py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           <div>
             <p className="font-serif text-2xl font-bold tracking-tight text-[var(--foreground)]">

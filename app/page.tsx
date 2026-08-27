@@ -53,12 +53,12 @@ export default function HomePage() {
               {hero.body}
             </p>
 
-            <div className="animate-fade-up animate-delay-3 mt-8 flex flex-wrap gap-6">
+            <div className="animate-fade-up animate-delay-3 mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
               {hero.ctas.map((cta) => (
                 <Link
                   key={cta.href}
                   href={cta.href}
-                  className="inline-flex items-center gap-2 text-sm font-medium text-white transition-opacity hover:opacity-80"
+                  className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-white transition-opacity hover:opacity-80"
                 >
                   <span className="font-serif text-[var(--accent)]">*</span>
                   {cta.label}
@@ -79,14 +79,14 @@ export default function HomePage() {
         id="selected-work"
         className="page-pad scroll-mt-20 py-20 lg:py-28"
       >
-        <div className="mb-12 flex items-end justify-between gap-6">
+        <div className="mb-10 flex flex-col gap-4 sm:mb-12 sm:flex-row sm:items-end sm:justify-between sm:gap-6">
           <h2 className="font-serif text-[clamp(28px,4vw,44px)] font-bold tracking-tight">
             Selected Work
             <span className="text-[var(--accent)]">*</span>
           </h2>
           <Link
             href="/work"
-            className="hidden text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)] sm:inline-flex sm:items-center sm:gap-2"
+            className="inline-flex min-h-11 items-center gap-2 text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
           >
             All case studies
             <span aria-hidden="true" className="font-bold text-[var(--accent)]">

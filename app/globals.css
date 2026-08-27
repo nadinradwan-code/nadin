@@ -18,10 +18,17 @@
   --font-serif: var(--font-instrument-serif);
 }
 
+html {
+  overflow-x: clip;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-instrument-sans), "Instrument Sans", system-ui, sans-serif;
+  overflow-x: clip;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .font-serif {
@@ -38,22 +45,38 @@ body {
 }
 
 .page-pad {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: max(1.5rem, env(safe-area-inset-left));
+  padding-right: max(1.5rem, env(safe-area-inset-right));
 }
 
 @media (min-width: 640px) {
   .page-pad {
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: max(3rem, env(safe-area-inset-left));
+    padding-right: max(3rem, env(safe-area-inset-right));
   }
 }
 
 @media (min-width: 1024px) {
   .page-pad {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: max(5rem, env(safe-area-inset-left));
+    padding-right: max(5rem, env(safe-area-inset-right));
   }
+}
+
+.safe-top {
+  padding-top: env(safe-area-inset-top);
+}
+
+.safe-bottom {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.touch-target {
+  display: inline-flex;
+  min-height: 2.75rem;
+  min-width: 2.75rem;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Motions */
