@@ -28,6 +28,7 @@ export type CaseStudy = {
   eyebrow: string;
   lede: string;
   intro: string;
+  metaDescription?: string;
   tags: string;
   sections: CaseSection[];
   testimonials?: {
@@ -48,21 +49,23 @@ export const caseStudies: Record<string, CaseStudy> = {
       "Brand and product redesign for the first FDA-cleared glucose system for weight management",
     eyebrow: "Case Study · Signos",
     lede: "A full brand and product redesign for the first FDA-cleared glucose system for weight management",
+    metaDescription:
+      "Brand and product redesign for Signos, an FDA-cleared metabolic health company. Four years as the design function, from sole visual designer to art director.",
     intro:
-      "I drove design on the rebrand of Signos from positioning to expression to campaign creative, and built the AI-assisted creative pipeline the team uses every day. The first-month sales target was met in three days.",
-    tags: "Brand · Product · AI-Native Production",
+      "I drove design on the rebrand of Signos from positioning to expression to campaign creative, and wrote the framework that made our existing brand system the context AI tools start from.",
+    tags: "Branding · Product UI · Campaigns · AI",
     sections: [
       {
         heading: "Background",
         paragraphs: [
           "Signos is a continuous glucose monitor that helps people understand how their body responds to food, sleep, and movement. When I joined as the sole visual designer in early 2022, the product was finding its voice and the brand was scattered across surfaces: app, marketing site, lifecycle email, paid media, social, press. Each surface had been built quickly and built separately. The team was small, ambitious, and ready to grow.",
-          "In the launch week of the first FDA-cleared glucose system for weight management, we shipped a new product, a rebuilt site, a new app interface, and a refreshed brand all on the same week. Ship a brand that earns medical credibility without ever feeling clinical. Ship a product experience that helps people change behavior without making the day harder. Hit the first-month sales target. We hit it in three days.",
+          "In the launch week of the first FDA-cleared glucose system for weight management, in August 2025, we shipped a new product, a rebuilt site, a new app interface, and a refreshed brand all on the same week. Ship a brand that earns medical credibility without ever feeling clinical. Ship a product experience that helps people change behavior without making the day harder.",
         ],
       },
       {
         heading: "My role",
         paragraphs: [
-          "Senior Visual Designer (Feb 2022 – Feb 2025), then Art Director (Feb 2025 – present). Drove design across brand expression, product UI, marketing site, and lifecycle email, partnering with the VP of Design, marketing leadership, and product. Built the AI-assisted creative pipeline the team now uses every day for performance marketing.",
+          "Senior Visual Designer (Feb 2022 – Feb 2025), then Art Director (Feb 2025 – present). Drove design across brand expression, product UI, marketing site, and lifecycle email, partnering with the VP of Design, marketing leadership, and product. Wrote the AI production framework that grounds generated work in the Signos brand system, with design review as a required step.",
         ],
       },
       {
@@ -71,7 +74,7 @@ export const caseStudies: Record<string, CaseStudy> = {
           "Pillars, type, color, and a system that holds across product and marketing",
         paragraphs: [
           "The category defaults to white coats and test tubes. Our customer is not looking for a clinic. She is looking for a smart friend who happens to have a degree in physiology. I built the brand foundation around that voice, then translated it into a type and color system that could carry the warmth without giving up medical credibility.",
-          "The work spanned brand pillars and voice, type and color discipline, the rebuilt marketing site as the first surface customers met, and the in-app experience where the brand and the product meet — onboarding, the glucose curve, log-meal flow, the celebration moments. Every surface, from a paid social ad to an in-app moment, traces back to the same three pillars and the same color discipline.",
+          "The work spanned brand pillars and voice, type and color discipline, the rebuilt marketing site as the first surface customers met, and the in-app experience where brand and product meet, working with our UI/UX designer on how the system carried into onboarding, the glucose curve and the moments that mark progress. Every surface, from a paid social ad to an in-app moment, traces back to the same three pillars and the same color discipline.",
           "This is the foundation the rest of the work depends on. Without it, the email system has no shared parts library, and the AI production pipeline has no brand to enforce.",
         ],
         keyDecision: {
@@ -95,7 +98,7 @@ export const caseStudies: Record<string, CaseStudy> = {
         paragraphs: [
           "Email was the highest-volume customer touchpoint Signos had. Before the system, every send was a one-off: marketing wrote a brief, design built it, engineering shipped it, and the whole loop took days. I built a modular email system that shared components with the marketing site — header, footer, hero, product card, CTA — so a tweak to a card on the site shipped to email at the same time, and the marketing team could assemble new sends without a designer in the loop.",
           "The library covers the surfaces that mattered: welcome flow, lifecycle nurture, transactional confirmations, promotional sales, re-engagement, post-purchase education. Each named slot is built to Klaviyo handoff specs so a designer can spec a send and the marketing team can ship it.",
-          "New site touchpoints feeding the program drove a 65% increase in email signups. The shared-component design system drove a 47% lift in email conversion.",
+          "The shared-component system meant a fix to a card improved the site and every future send at the same time, and marketing could ship lifecycle campaigns without a designer in the loop.",
         ],
         keyDecision: {
           decision:
@@ -117,9 +120,9 @@ export const caseStudies: Record<string, CaseStudy> = {
           "The pipeline that let a small team feed Meta and Google's algorithmic ad platforms at the volume they now require",
         paragraphs: [
           "Performance creative changed in 2024 and 2025. Google PMAX and Meta Advantage+ stopped being campaigns and started being algorithms: they test creative variants in real time and reward whoever can feed them the most variance. The old workflow — a designer produces a handful of variants per campaign and prays — stops working when the algorithm wants a hundred-plus to find the winner.",
-          "In 2024 I built the AI-assisted creative pipeline our team uses every day. Claude and ChatGPT for strategy and copy. Midjourney and Firefly for image. Custom Claude Projects and GPTs for the recurring tasks. ElevenLabs for audio drafts. The whole thing is stitched together so concept-to-comp time dropped from days to hours, and a small team can ship the volume that algorithmic ad platforms now require. The 2025 holiday launch shipped 222 brand-consistent assets out of the same pipeline.",
+          "Everyone was already using AI. Engineers in Cursor, marketing in ChatGPT, contractors wherever they liked. None of the output looked like Signos, because none of it started from Signos. We already had the answer: a brand guide, a voice guide, a mobile design system, a brand library, an email component library. What was missing was the instruction to load them first. I wrote the framework that does that, with design review as a required gate before anything ships.",
           "AI is not a replacement for taste. It is a leverage layer for it. The curation is mine. The volume is what I delegate. Brand discipline holds across every variant because the templates and the rules sit upstream of the generation, not downstream.",
-          "TV channel acquisition costs came down 70% under our art direction during this period.",
+          "The 2026 GLP-1 launch ran out of the same system: hero, ad concepts, and a full image library, all built from the same set of parts.",
         ],
         keyDecision: {
           decision:
@@ -127,27 +130,13 @@ export const caseStudies: Record<string, CaseStudy> = {
           why: "The volume gain is real but the taste gap is too. Letting AI choose is how brands start to look the same. Letting AI accelerate is how a small team ships like a big one.",
         },
         imageCaption:
-          "AI-assisted pipeline output: 222 brand-consistent assets from a single production system.",
+          "AI-assisted production: brand-grounded variants from a shared framework.",
         images: [
           {
             path: "/images/projects/signos/signos-ai-variance-hero.png",
             alt: "AI-assisted pipeline output",
           },
         ],
-      },
-    ],
-    testimonials: [
-      {
-        quote:
-          "Nadin is an exemplary designer with an incredible mind. She is the rare creative who can hold a brand together at the system level while pushing the craft bar at the pixel level, and she does both without ever making the room feel smaller.",
-        name: "Benji McCurdy",
-        title: "VP of Design, Signos",
-      },
-      {
-        quote:
-          "Nadin always drove projects forward. She delivered on time, every time, and did it while supporting the team around her. She created cohesion through strong design leadership and made cross-functional collaboration feel easy.",
-        name: "Tiffani Davidson",
-        title: "VP of Marketing, Signos",
       },
     ],
     images: [
