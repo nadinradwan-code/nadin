@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { site } from "@/lib/site";
 import {
   formatPostDate,
   getWritingPost,
@@ -18,7 +20,7 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const post = getWritingPost(slug);
-  if (!post) return { title: "Writing" };
+  if (!post) return { title: "Notebook" };
   return {
     title: post.title,
     description: post.sections[0]?.paragraphs[0],
@@ -37,7 +39,7 @@ export default async function WritingPostPage({ params }: Props) {
           href="/writing"
           className="inline-flex items-center gap-2 text-sm text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
         >
-          ← Writing
+          ← Notebook
         </Link>
 
         <h1 className="mt-8 font-serif text-[clamp(32px,5vw,48px)] font-bold leading-[1.05] tracking-[-0.02em] text-[var(--foreground)]">
@@ -59,6 +61,29 @@ export default async function WritingPostPage({ params }: Props) {
                   <p key={paragraph.slice(0, 40)}>{paragraph}</p>
                 ))}
               </div>
+              {section.images?.length ? (
+                <div className="mt-8 space-y-8">
+                  {section.images.map((image) => (
+                    <figure key={image.src}>
+                      <div className="relative aspect-[16/10] overflow-hidden bg-[var(--border)]">
+                        <Image
+                          src={image.src}
+                          alt={image.alt}
+                          fill
+                          sizes="(max-width: 768px) 100vw, 672px"
+                          className="object-cover"
+                          unoptimized={image.src.endsWith(".gif")}
+                        />
+                      </div>
+                      {image.caption ? (
+                        <figcaption className="mt-3 text-sm text-[var(--muted)]">
+                          {image.caption}
+                        </figcaption>
+                      ) : null}
+                    </figure>
+                  ))}
+                </div>
+              ) : null}
             </section>
           ))}
         </div>
@@ -68,6 +93,24 @@ export default async function WritingPostPage({ params }: Props) {
             Tools used: {post.tools}
           </p>
         ) : null}
+
+        <footer className="mt-14 border-t border-[var(--border)] pt-10">
+          <div className="flex flex-col items-center text-center">
+            <div className="relative h-20 w-20 overflow-hidden rounded-full bg-[var(--border)]">
+              <Image
+                src="/images/hero-mobile.png"
+                alt={site.name}
+                fill
+                sizes="80px"
+                className="object-cover"
+              />
+            </div>
+            <p className="mt-4 font-serif text-lg font-bold tracking-tight text-[var(--foreground)]">
+              {site.name}
+            </p>
+            <p className="mt-1 text-sm text-[var(--muted)]">{site.title}</p>
+          </div>
+        </footer>
       </div>
     </article>
   );

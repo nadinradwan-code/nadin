@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import CaseImageFrame from "@/components/CaseImageFrame";
 import {
   getCaseStudy,
   getCaseStudySlugs,
@@ -83,24 +83,14 @@ function SectionBlock({ section }: { section: CaseSection }) {
       {section.images?.length ? (
         <div className="mt-10 space-y-8">
           {section.images.map((image, i) => (
-            <figure key={image.path}>
-              <div className="relative aspect-[16/10] overflow-hidden bg-[var(--border)]">
-                <Image
-                  src={image.path}
-                  alt={image.alt}
-                  fill
-                  sizes="(max-width: 1024px) 100vw, 900px"
-                  className="object-cover"
-                  unoptimized={image.path.endsWith(".gif")}
-                />
-              </div>
-              {(section.imageCaptions?.[i] ||
-                (i === 0 && section.imageCaption)) && (
-                <figcaption className="mt-3 text-sm text-[var(--muted)]">
-                  {section.imageCaptions?.[i] ?? section.imageCaption}
-                </figcaption>
-              )}
-            </figure>
+            <CaseImageFrame
+              key={image.path}
+              image={image}
+              caption={
+                section.imageCaptions?.[i] ??
+                (i === 0 ? section.imageCaption : undefined)
+              }
+            />
           ))}
         </div>
       ) : null}
@@ -135,16 +125,15 @@ export default async function CaseStudyPage({ params }: Props) {
       </header>
 
       {heroImage ? (
-        <div className="relative aspect-[16/9] w-full overflow-hidden bg-[var(--border)] sm:aspect-[21/9]">
-          <Image
-            src={heroImage.path}
-            alt={heroImage.alt}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover"
-            unoptimized={heroImage.path.endsWith(".gif")}
-          />
+        <div className="page-pad">
+          <div className="mx-auto max-w-5xl">
+            <CaseImageFrame
+              image={heroImage}
+              variant="hero"
+              priority
+              label="Hero"
+            />
+          </div>
         </div>
       ) : null}
 

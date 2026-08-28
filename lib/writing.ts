@@ -4,11 +4,19 @@ export type WritingPost = {
   excerpt: string;
   date: string;
   href: string;
+  image?: string;
+};
+
+export type WritingSectionImage = {
+  src: string;
+  alt: string;
+  caption?: string;
 };
 
 export type WritingSection = {
   heading?: string;
   paragraphs: string[];
+  images?: WritingSectionImage[];
 };
 
 export type WritingBody = {
@@ -20,10 +28,10 @@ export type WritingBody = {
 };
 
 export const writingMeta = {
-  pageTitle: "Writing — Nadin Radwan",
-  navLabel: "Thoughts",
+  pageTitle: "Notebook — Nadin Radwan",
+  navLabel: "Notebook",
   intro:
-    "Thoughts on AI-native design, creative workflow, and building at the intersection of design and technology.",
+    "Notes on AI-native design, creative workflow, and building at the intersection of design and technology.",
 } as const;
 
 export const writingPosts: WritingPost[] = [
@@ -34,6 +42,7 @@ export const writingPosts: WritingPost[] = [
       "The designer-developer handoff used to be where ideas went to get smaller. That tension is gone.",
     date: "2026-05-27",
     href: "/writing/design-and-code-simultaneously",
+    image: "/images/projects/signos/signos-marketing-ui.png",
   },
   {
     slug: "figma-make-vs-claude-honest-comparison",
@@ -41,6 +50,7 @@ export const writingPosts: WritingPost[] = [
     excerpt: "I gave both a real shot. Here's what I actually found.",
     date: "2026-05-20",
     href: "/writing/figma-make-vs-claude-honest-comparison",
+    image: "/images/projects/signos/signos-ai-variance-hero.png",
   },
   {
     slug: "when-ai-replaced-the-photoshoot",
@@ -49,6 +59,7 @@ export const writingPosts: WritingPost[] = [
       "How I used Adobe Firefly to generate exact recipe imagery for a nutrition-focused guide—and why close enough is no longer a forced choice.",
     date: "2026-05-13",
     href: "/writing/when-ai-replaced-the-photoshoot",
+    image: "/images/projects/raw-generation/cover-raw-generation.png",
   },
   {
     slug: "product-design-and-brand-design",
@@ -57,6 +68,7 @@ export const writingPosts: WritingPost[] = [
       "Product and brand are often separate—they're stronger when they're aligned.",
     date: "2024-03-10",
     href: "/writing/product-design-and-brand-design",
+    image: "/images/projects/signos/signos-in-app.png",
   },
   {
     slug: "why-growth-marketing-needs-design-systems",
@@ -65,6 +77,7 @@ export const writingPosts: WritingPost[] = [
       "Growth teams ship fast—design systems keep quality and brand intact at that pace.",
     date: "2024-02-20",
     href: "/writing/why-growth-marketing-needs-design-systems",
+    image: "/images/projects/raw-generation/card-raw-generation.png",
   },
   {
     slug: "designing-brand-systems-startup-growth",
@@ -73,6 +86,7 @@ export const writingPosts: WritingPost[] = [
       "How to build brand systems that scale with your startup—without overbuilding.",
     date: "2024-01-15",
     href: "/writing/designing-brand-systems-startup-growth",
+    image: "/images/projects/castle-foods/card-castle-foods.png",
   },
 ];
 
@@ -98,6 +112,13 @@ export const writingBodies: WritingBody[] = [
           "Design and code happen at the same time, in the same session. I'm not designing a mockup to hand off — I'm building the thing itself, directing it the way I'd direct a shoot or a brand presentation. The aesthetic decisions and the functional decisions are the same decision.",
           "A multi-page site with custom functionality that used to take months now takes about a week.",
         ],
+        images: [
+          {
+            src: "/images/projects/signos/signos-marketing-ui.png",
+            alt: "Signos Health marketing UI built with AI-assisted design workflow",
+            caption: "Marketing surfaces where design and code ship in the same session.",
+          },
+        ],
       },
       {
         heading: "What this has changed",
@@ -107,6 +128,13 @@ export const writingBodies: WritingBody[] = [
           'I\'m getting to play with functionality in a way I never could before. To explore. To say "what if this section responded to scroll" and see it working in minutes rather than weeks. To build something and feel it, then change it, then feel it again.',
           "I'm experiencing this shift in real time, and that's the most exciting part of the work right now. The gap between what a designer can imagine and what they can actually build has never been smaller.",
           "That gap is where the best ideas used to get lost. Not anymore.",
+        ],
+        images: [
+          {
+            src: "/images/projects/signos/signos-hero.png",
+            alt: "Signos Health brand and product hero design",
+            caption: "Interactive, animated details that used to wait for a developer handoff.",
+          },
         ],
       },
     ],
@@ -127,6 +155,13 @@ export const writingBodies: WritingBody[] = [
         paragraphs: [
           "The promise of Figma Make is real — generate UI directly inside your design environment without switching contexts. For certain tasks it delivers. Quick wireframes, basic component suggestions, getting something on the canvas fast when you need a starting point. If you're early in ideation and need to move, it works.",
         ],
+        images: [
+          {
+            src: "/images/projects/denali/denali-inspiration.png",
+            alt: "Early UI exploration inside a design file",
+            caption: "Fast canvas output still has a place in early ideation.",
+          },
+        ],
       },
       {
         heading: "Where I kept hitting a ceiling",
@@ -140,6 +175,13 @@ export const writingBodies: WritingBody[] = [
           "I started using Claude directly for design work — building sites, PDFs, emails, Figma frames, full design file structure — and the difference isn't just capability. It's the conversation.",
           'I describe what I need section by section. I push back when something\'s off. I ask for something more specific, more refined, more considered — and it responds to that. It holds the context of what we\'re building together and adjusts. When I say "this section feels too heavy, pull it back," it understands what that means in the context of what we\'ve already built.',
           "I've used it to build out full Figma frames, set up design file structure from a brief, and generate functionality I would have had to either hand off to a developer or compromise on entirely.",
+        ],
+        images: [
+          {
+            src: "/images/projects/signos/signos-ai-variance-hero.png",
+            alt: "AI-generated creative variants for a performance marketing campaign",
+            caption: "Iterating on campaign creative through conversation, not tickets.",
+          },
         ],
       },
       {
@@ -163,11 +205,29 @@ export const writingBodies: WritingBody[] = [
           "The project was a nutrition-focused guide built around the plate method — a framework where half the plate is vegetables and fruit, a quarter is grains or healthy carbs, and a quarter is protein. Every recipe had specific ingredients, specific proportions, a specific look. The imagery needed to show all of it accurately, or the guide wouldn't work.",
           "Stock photography doesn't work that way. You search, you scroll, you compromise. The protein is wrong. The portion sizes are off. The greens are there but the grain is missing. After enough searches you start negotiating with yourself — this is close enough — because the alternative is an expensive food photography shoot and a weeks-long production timeline.",
           "I stopped searching and started generating.",
+        ],
+        images: [
+          {
+            src: "/images/projects/raw-generation/cover-raw-generation.png",
+            alt: "Nutrition guide layout with recipe imagery",
+            caption: "Recipe imagery generated to match exact plate-method ratios.",
+          },
+        ],
+      },
+      {
+        paragraphs: [
           "For each recipe I input the dish name, the specific ingredients, the plating style, and the plate method ratios directly into Adobe Firefly. What came back was a dressed, styled plate image built around that exact meal — the right protein, the right grain, the right proportion of vegetables. Every time. In minutes.",
           "Greek yogurt chicken with saffron and garlic, quinoa, and a mixed green salad. Overhead shot, white background, plate method ratios accurate to the guide. It looks like it came from a food photographer's studio. It came from a prompt.",
           "No shoot. No location. No licensing fees. No back-and-forth over whether the broccoli should be roasted or raw. The image matched the content because I built it directly from the content.",
           "What changed for me wasn't just the time saved — it was the creative control. I wasn't browsing a library hoping something close enough existed. I was describing exactly what I needed and getting exactly that. The tool became part of the design process rather than a workaround for it.",
           "Close enough is not a forced choice anymore. That shift is bigger than it sounds.",
+        ],
+        images: [
+          {
+            src: "/images/projects/castle/castle-garlic-minced.jpg",
+            alt: "Styled food product photography on packaging",
+            caption: "The bar for food imagery is specificity — not stock that almost fits.",
+          },
         ],
       },
     ],
@@ -184,6 +244,18 @@ export const writingBodies: WritingBody[] = [
           "Getting there requires design systems that span both product and marketing. Shared tokens, shared components where it makes sense, and clear guidelines for when to diverge. It also requires collaboration: product and brand designers working from the same source of truth.",
           "Start by mapping where the two disciplines already overlap—signup flows, emails, in-app messaging—and build from there. The intersection is where the best opportunities are.",
         ],
+        images: [
+          {
+            src: "/images/projects/signos/signos-in-app.png",
+            alt: "Signos Health in-app product UI aligned with brand system",
+            caption: "Product and marketing surfaces sharing the same visual language.",
+          },
+          {
+            src: "/images/projects/signos/card-signos.png",
+            alt: "Signos Health brand and product case study card",
+            caption: "Brand expression that carries from campaign into product.",
+          },
+        ],
       },
     ],
   },
@@ -198,6 +270,13 @@ export const writingBodies: WritingBody[] = [
           "A growth-focused design system doesn't have to be as comprehensive as a product design system. It needs to cover the surfaces growth actually uses: landing page blocks, email components, ad creative templates, and maybe a few social formats. The emphasis should be on speed and reuse—components that can be composed quickly and stay on-brand.",
           "When design and growth share the same tokens and components, you get consistency without gatekeeping. Growth can ship experiments without waiting on design, and design can focus on raising the bar instead of firefighting.",
           "Invest in the system early. The longer you wait, the more one-off work piles up and the harder it is to retrofit.",
+        ],
+        images: [
+          {
+            src: "/images/projects/raw-generation/cover-raw-generation.png",
+            alt: "Modular email and campaign creative system",
+            caption: "Reusable blocks that let growth teams ship without starting from zero.",
+          },
         ],
       },
     ],
@@ -214,6 +293,18 @@ export const writingBodies: WritingBody[] = [
           'As the company grows, you can add more components and patterns. The key is to make the system extensible from day one. Use semantic naming (e.g. "primary", "surface") instead of one-off values so that when you need to support new channels or themes, you\'re not rewriting everything.',
           "Finally, treat the brand system as a product. Iterate on it based on how people actually use it. If a component is always overridden or ignored, simplify or replace it. The goal is clarity and consistency, not completeness.",
         ],
+        images: [
+          {
+            src: "/images/projects/castle/castle-system-1.png",
+            alt: "Castle Foods brand system with logo, type, and packaging",
+            caption: "A brand system built to absorb new products without a rebuild.",
+          },
+          {
+            src: "/images/projects/castle-foods/cover-castle-foods.png",
+            alt: "Castle Foods packaging and brand identity overview",
+            caption: "Tokens and components that scale with the business.",
+          },
+        ],
       },
     ],
   },
@@ -229,9 +320,10 @@ export function getWritingSlugs() {
 
 export function formatPostDate(date: string) {
   const [year, month, day] = date.split("-").map(Number);
-  return new Date(year, month - 1, day).toLocaleDateString("en-US", {
-    year: "numeric",
-    month: "long",
-    day: "numeric",
-  });
+  const monthName = new Date(year, month - 1, day)
+    .toLocaleDateString("en-US", { month: "long" })
+    .toUpperCase();
+  const paddedDay = String(day).padStart(2, "0");
+  const paddedYear = String(year).padStart(4, "0");
+  return `${monthName} / ${paddedDay} / ${paddedYear}`;
 }

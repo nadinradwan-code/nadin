@@ -1,5 +1,14 @@
 import type { Metadata } from "next";
-import { capabilities, education, experience, site } from "@/lib/site";
+import AvatarCircle from "@/components/AvatarCircle";
+import CompanyBanner from "@/components/CompanyBanner";
+import {
+  avatars,
+  capabilities,
+  companyBanners,
+  education,
+  experience,
+  site,
+} from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Resume",
@@ -10,13 +19,20 @@ export default function ResumePage() {
   return (
     <section className="page-pad py-16 lg:py-24">
       <div className="mx-auto max-w-3xl">
-        <p className="eyebrow mb-3">Resume</p>
-        <h1 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight tracking-[-0.02em] text-[var(--foreground)]">
-          Experience
-          <span className="font-serif text-[var(--accent)]">*</span>
-        </h1>
+        <div className="mb-10 flex flex-col items-center text-center sm:mb-14">
+          <AvatarCircle
+            src={avatars.resume.src}
+            alt={avatars.resume.alt}
+            size="lg"
+          />
+          <p className="eyebrow mt-6 mb-3">Resume</p>
+          <h1 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight tracking-[-0.02em] text-[var(--foreground)]">
+            Experience
+            <span className="font-serif text-[var(--accent)]">*</span>
+          </h1>
+        </div>
 
-        <div className="mt-6">
+        <div className="text-center">
           <a
             href={site.resumePdfPath}
             download={site.resumePdfFilename}
@@ -30,18 +46,25 @@ export default function ResumePage() {
           </a>
         </div>
 
-        <div className="mt-14 space-y-14">
-          {experience.map((role) => (
-            <article key={`${role.company}-${role.title}`}>
-              <p className="eyebrow mb-2">{role.dates}</p>
-              <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--foreground)] sm:text-2xl">
-                {role.title}
-                <span className="text-[var(--muted)]"> — {role.company}</span>
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-                {role.summary}
-              </p>
-            </article>
+        <div className="mt-14 space-y-0">
+          {experience.map((role, index) => (
+            <div key={`${role.company}-${role.title}`}>
+              {index > 0 ? (
+                <div className="my-10 -mx-[max(1.5rem,env(safe-area-inset-left))] sm:-mx-[max(3rem,env(safe-area-inset-left))] lg:-mx-[max(5rem,env(safe-area-inset-left))]">
+                  <CompanyBanner {...companyBanners[index - 1]} />
+                </div>
+              ) : null}
+              <article>
+                <p className="eyebrow mb-2">{role.dates}</p>
+                <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--foreground)] sm:text-2xl">
+                  {role.title}
+                  <span className="text-[var(--muted)]"> — {role.company}</span>
+                </h2>
+                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+                  {role.summary}
+                </p>
+              </article>
+            </div>
           ))}
         </div>
 

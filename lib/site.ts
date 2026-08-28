@@ -22,15 +22,45 @@ export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/resume", label: "Resume" },
   { href: "/contact", label: "Contact" },
-  { href: "/writing", label: "Thoughts" },
+  { href: "/writing", label: "Notebook" },
 ] as const;
 
-export const tickerItems = [
-  "Brand Systems",
-  "Product UI",
-  "Campaigns",
-  "AI-Assisted Production",
-  "Creative Direction",
+export const avatars = {
+  resume: {
+    src: "/images/avatars/avatar-resume-wave.png",
+    alt: "Illustrated avatar of Nadin Radwan waving",
+  },
+  contact: {
+    src: "/images/avatars/avatar-contact-phone.png",
+    alt: "Illustrated avatar of Nadin Radwan on the phone",
+  },
+} as const;
+
+export const companyBanners = [
+  {
+    company: "Signos Health",
+    logoAlt: "Signos Health",
+    backgroundColor: "#0B3D2E",
+    textColor: "#ffffff",
+  },
+  {
+    company: "Conduit Digital",
+    logoAlt: "Conduit Digital",
+    backgroundColor: "#1A1A2E",
+    textColor: "#ffffff",
+  },
+  {
+    company: "Raw Generation",
+    logoAlt: "Raw Generation",
+    backgroundColor: "#2D5016",
+    textColor: "#ffffff",
+  },
+  {
+    company: "Spitball Advertising",
+    logoAlt: "Spitball Advertising",
+    backgroundColor: "#C41E3A",
+    textColor: "#ffffff",
+  },
 ] as const;
 
 export const hero = {
