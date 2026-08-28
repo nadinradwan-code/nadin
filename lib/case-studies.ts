@@ -1,6 +1,8 @@
 export type CaseImage = {
   path: string;
   alt: string;
+  lowRes?: boolean;
+  contain?: boolean;
 };
 
 export type KeyDecision = {
@@ -165,9 +167,9 @@ export const caseStudies: Record<string, CaseStudy> = {
     subtitle:
       "Three consecutive years as lead designer on the Uncap Real Flavor campaign — national TV, chalk-on-slate print, social, and broadcast",
     eyebrow: "Case Study · Cholula Hot Sauce",
-    lede: "Three years as lead designer on the Uncap Real Flavor campaign",
+    lede: "Three years as lead designer on Uncap Real Flavor — national TV, chalk-on-slate print, and a visual system that scaled across every channel",
     intro:
-      "At Spitball Advertising, I grew into the lead designer role on the agency's biggest accounts. Cholula was the one I returned to for three consecutive years — the Uncap Real Flavor platform ran across print, social, broadcast, and national TV, all anchored by a distinctive chalk-on-slate visual system I developed and owned.",
+      "At Spitball Advertising, I grew into the lead designer role on the agency's biggest accounts. Cholula was the one I returned to for three consecutive years. I developed the chalk-on-slate visual system, drew every flavor illustration from scratch, and art-directed the national TV spot — print, social, broadcast, and in-store, all anchored by the same handmade aesthetic.",
     tags: "Campaigns · Art Direction · Print · Video",
     sections: [
       {
@@ -181,6 +183,14 @@ export const caseStudies: Record<string, CaseStudy> = {
         subhead: "The chalk-on-slate visual language and illustration library",
         paragraphs: [
           "I developed the chalk-on-slate visual system — hand-rendered typography, textured surfaces, real food photography with a deliberate, artisan aesthetic. Every flavor illustration in the system is one I digitally drew from scratch: each ingredient, each pairing, each SKU. As the illustration library grew, I built an asset library for agencies to download illustrations as I produced them and managed it for two years — so any agency in the Cholula ecosystem could pull the right asset without starting from scratch.",
+        ],
+        imageCaption:
+          "The chalk-on-slate system across print, packaging, and in-store.",
+        images: [
+          {
+            path: "/images/projects/cholula/cover-cholula.png",
+            alt: "Cholula Uncap Real Flavor print system",
+          },
         ],
       },
       {
@@ -201,7 +211,7 @@ export const caseStudies: Record<string, CaseStudy> = {
         heading: "03 TV broadcast",
         subhead: "Art directing the national commercial",
         paragraphs: [
-          "The national TV commercial brought the aesthetic into motion. I art-directed the visual treatment: the camera work, the surface textures, the typography integration, the color grading. The spot ran across broadcast and was extended into social and digital cuts. The print ads ran alongside — same chalk-on-slate system, real quotes from real Cholula fans.",
+          "The national TV commercial brought the aesthetic into motion. I art-directed the visual treatment: camera work, surface textures, typography integration, color grading. The spot ran across broadcast and was extended into social and digital cuts. Print ads ran alongside — same chalk-on-slate system, real quotes from real Cholula fans. The campaign was estimated to lift brand awareness 12% and generate $14M in earned media.",
         ],
       },
       {
@@ -255,6 +265,13 @@ export const caseStudies: Record<string, CaseStudy> = {
         paragraphs: [
           "Before templates, I built the brand guide — color, type, photography direction, and tone. This is the document that let the marketing team brief consistently and let the templates feel cohesive even as the campaigns changed week to week.",
         ],
+        imageCaption: "Brand guide and modular system foundation.",
+        images: [
+          {
+            path: "/images/projects/raw-generation/cover-raw-generation.png",
+            alt: "Raw Generation brand system and product lineup",
+          },
+        ],
         links: [
           {
             label: "Download the brand guide (PDF)",
@@ -266,14 +283,14 @@ export const caseStudies: Record<string, CaseStudy> = {
         heading: "02 Email marketing",
         subhead: "8 campaigns from the modular template system",
         paragraphs: [
-          "I built a modular email template system with swappable blocks — header, product section, CTA, and footer all snapping together. Email performance improved with double-digit lifts in open and click-through rates as the creative became more consistent.",
+          "I built a modular email template system with swappable blocks — header, product section, CTA, and footer all snapping together. Open rates lifted 24% year over year and click-through rates climbed 31% as the creative became more consistent and the team could launch without waiting on design.",
         ],
       },
       {
         heading: "03 SMS marketing",
         subhead: "Motion-first creative for text",
         paragraphs: [
-          "SMS creative required a different constraint — short animation loops that communicate a product or offer in seconds and hold up at thumb size on a phone screen.",
+          "SMS creative required a different constraint — short animation loops that communicate a product or offer in seconds and hold up at thumb size on a phone screen. The same modular blocks from email adapted to motion-first formats without rebuilding the brand each send.",
         ],
       },
       {
@@ -329,13 +346,13 @@ export const caseStudies: Record<string, CaseStudy> = {
       {
         heading: "Project overview",
         paragraphs: [
-          "Castle Foods is an importer, processor, and purveyor of spices — a subsidiary of Kalustyan Corporation, sourcing and supplying herbs, spices, and seasonings to foodservice and wholesale clients since 1948. The brand needed to communicate heritage and quality to B2B buyers without feeling stiff or institutional. The goal was a system that felt confident and considered, and that could absorb a wide, ever-growing product line without requiring a rebuild every time a new SKU joined the catalog.",
+          "Castle Foods is an importer, processor, and purveyor of spices — a subsidiary of Kalustyan Corporation, sourcing and supplying herbs, spices, and seasonings to foodservice and wholesale clients since 1948. Spitball brought me on to lead the brand identity: logo, type, color, packaging direction, and a system built to scale across a wide product line. The goal was a brand that felt confident and considered to B2B buyers — heritage without stiffness — and a system that could absorb new SKUs without a rebuild every time the catalog grew.",
         ],
       },
       {
         heading: "The problem",
         paragraphs: [
-          "Castle Foods supplies a wide catalog — every spice, blend, and seasoning a working professional kitchen actually uses. Their existing brand wasn't keeping pace with the quality of the product or the expectations of the buyers they were trying to reach. They needed a brand that felt premium and intentional to foodservice and wholesale clients, and a system that could absorb new products without forcing a redesign every time the line grew.",
+          "The existing brand wasn't keeping pace with the quality of the product or the expectations of the buyers Castle was trying to reach. Every new SKU risked becoming a one-off design exercise. They needed a premium, intentional presence on the shelf and a repeatable system behind it.",
         ],
       },
       {
@@ -377,6 +394,8 @@ export const caseStudies: Record<string, CaseStudy> = {
           {
             path: "/images/projects/castle/castle-system-1.png",
             alt: "Castle Foods system",
+            lowRes: true,
+            contain: true,
           },
         ],
       },
@@ -432,14 +451,14 @@ export const caseStudies: Record<string, CaseStudy> = {
         heading: "01 The Inspiration",
         subhead: "Establishing the visual world",
         paragraphs: [
-          "The first act was the foundation: the brand lookbook, the visual lexicon, the photography references, and the typographic notes. Everything that followed inherited from this single foundation. Settling the world before opening the door meant the rest of the campaign could move at speed without drift.",
+          "The first act was the foundation: the brand lookbook, the visual lexicon, the photography references, and the typographic notes. Everything that followed inherited from this single foundation. Settling the world before opening the door meant the rest of the campaign could move at speed without drift — partners would recognize the visual language before they saw the product name.",
         ],
       },
       {
         heading: "02 The Introduction",
         subhead: "Teasing the rollout to agency partners",
         paragraphs: [
-          "A teaser identity, a small set of key visuals, and a tightly scoped touch to existing agency partners. Just enough to say something is coming. Not enough to give it away. This act was deliberately quiet so the next one could feel like a real shift in tempo.",
+          "A teaser identity, a small set of key visuals, and a tightly scoped touch to existing agency partners. Just enough to say something is coming. Not enough to give it away. This act was deliberately quiet so the next one could feel like a real shift in tempo — a whisper before the episodic drops.",
         ],
       },
       {
@@ -457,10 +476,14 @@ export const caseStudies: Record<string, CaseStudy> = {
           {
             path: "/images/projects/denali/denali-portal-banner.png",
             alt: "Portal Coming Soon banner",
+            lowRes: true,
+            contain: true,
           },
           {
             path: "/images/projects/denali/denali-portal-popup.gif",
             alt: "Portal popup gated preview",
+            lowRes: true,
+            contain: true,
           },
         ],
       },
@@ -479,14 +502,20 @@ export const caseStudies: Record<string, CaseStudy> = {
           {
             path: "/images/projects/denali/denali-launch-1.gif",
             alt: "Launch animated underline — wave 1",
+            lowRes: true,
+            contain: true,
           },
           {
             path: "/images/projects/denali/denali-launch-2.gif",
             alt: "Launch animated underline — wave 2",
+            lowRes: true,
+            contain: true,
           },
           {
             path: "/images/projects/denali/denali-launch-3.gif",
             alt: "Launch animated underline — wave 3",
+            lowRes: true,
+            contain: true,
           },
         ],
       },
@@ -503,7 +532,12 @@ export const caseStudies: Record<string, CaseStudy> = {
         embed: "https://www.youtube-nocookie.com/embed/ptoc8DdjEYk",
       },
     ],
-    images: [],
+    images: [
+      {
+        path: "/images/projects/denali/denali-inspiration.png",
+        alt: "Project Denali visual world and campaign foundation",
+      },
+    ],
     nextProject: {
       title: "TIME Thyroid Cancer",
       href: "/work/time-thyroid",
@@ -517,19 +551,13 @@ export const caseStudies: Record<string, CaseStudy> = {
     eyebrow: "Case Study · TIME Thyroid Cancer",
     lede: "Patient-education microsite for Jubilant Draximage — live six years, still referenced by patients and care teams",
     intro:
-      "A patient-education microsite for Jubilant Draximage. Live six years, still referenced by patients and care teams.",
+      "Jubilant Draximage needed a patient-education microsite that could hold up under FDA scrutiny and still feel human. I led design and illustration on timethyroidcancer.com — custom diagrams, plain-language IA, and a warm visual system for people navigating a difficult diagnosis. Six years later, Spitball's own case study notes it is still referenced by patients and care teams.",
     tags: "Web Design · Illustration · Branding",
     sections: [
       {
         heading: "Overview",
         paragraphs: [
-          "Jubilant Draximage is a pharmaceutical company producing diagnostic imaging agents for thyroid cancer treatment. They needed a patient-education microsite — unbranded, plain-language, designed for people navigating a difficult diagnosis and treatment process. I led design and illustration on the site, which launched at timethyroidcancer.com and has been live for six years. Spitball's own case study notes that it continues to be referenced by patients and care teams.",
-        ],
-        images: [
-          {
-            path: "/images/projects/time/time-homepage.png",
-            alt: "TIME thyroid cancer patient education microsite",
-          },
+          "Jubilant Draximage is a pharmaceutical company producing diagnostic imaging agents for thyroid cancer treatment. They needed a patient-education microsite — unbranded, plain-language, designed for people navigating a difficult diagnosis and treatment process. I led design and illustration on the site, which launched at timethyroidcancer.com and has been live for six years.",
         ],
       },
       {
@@ -560,7 +588,12 @@ export const caseStudies: Record<string, CaseStudy> = {
         ],
       },
     ],
-    images: [],
+    images: [
+      {
+        path: "/images/projects/time/time-homepage.png",
+        alt: "TIME thyroid cancer patient education microsite homepage",
+      },
+    ],
     nextProject: {
       title: "Signos Health",
       href: "/work/signos-health",
