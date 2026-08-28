@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 import SignosMedia from "@/components/signos/SignosMedia";
 import {
@@ -35,8 +34,8 @@ export const metadata: Metadata = {
   },
 };
 
-function ActLabel({ children }: { children: string }) {
-  return <p className="signos-kicker">{children}</p>;
+function SectionEyebrow({ children }: { children: string }) {
+  return <p className="eyebrow mb-3">{children}</p>;
 }
 
 export default function SignosCaseStudyPage() {
@@ -44,26 +43,15 @@ export default function SignosCaseStudyPage() {
     <article className={`${archivo.variable} ${jetbrainsMono.variable} signos-case`}>
       <header className="signos-hero">
         <div className="signos-wrap">
-          <Image
-            src="/images/projects/signos/case/logo/signos-lockup.svg"
-            alt="Signos"
-            className="signos-lockup"
-            width={170}
-            height={52}
-            unoptimized
-            priority
-          />
-          <p className="signos-kicker">{signosHero.kicker}</p>
-          <h1 className="signos-display">
-            {signosHero.title}
-            <em> {signosHero.titleMark}</em>
+          <SectionEyebrow>{signosHero.kicker}</SectionEyebrow>
+          <h1 className="signos-page-h1">
+            Signos Health
+            <span className="signos-page-accent">*</span>
           </h1>
           <p className="signos-deck">{signosHero.deck}</p>
-          <ul className="signos-tags">
-            {signosHero.tags.map((tag) => (
-              <li key={tag}>{tag}</li>
-            ))}
-          </ul>
+          <p className="eyebrow mt-6">
+            {signosHero.tags.join(" · ")}
+          </p>
           <p className="signos-intro">{signosHero.intro}</p>
         </div>
       </header>
@@ -81,7 +69,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="thesis">
         <div className="signos-wrap">
-          <ActLabel>Thesis</ActLabel>
+          <SectionEyebrow>Thesis</SectionEyebrow>
           <h2 id="thesis" className="signos-h2">
             A smart friend with a degree in physiology
           </h2>
@@ -98,7 +86,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="role">
         <div className="signos-wrap">
-          <ActLabel>Role · Scope · Outcomes</ActLabel>
+          <SectionEyebrow>Role · Scope · Outcomes</SectionEyebrow>
           <h2 id="role" className="signos-h2">
             Sole visual designer, then art director
           </h2>
@@ -128,10 +116,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="act-i">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act I</ActLabel>
-            <ActLabel>The rebrand</ActLabel>
-          </div>
+          <SectionEyebrow>Act I · The rebrand</SectionEyebrow>
           <h2 id="act-i" className="signos-h2">
             Hold the mandate. Spend it on a system.
           </h2>
@@ -198,10 +183,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="act-ii">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act II</ActLabel>
-            <ActLabel>Two shoots</ActLabel>
-          </div>
+          <SectionEyebrow>Act II · Two shoots</SectionEyebrow>
           <h2 id="act-ii" className="signos-h2">
             June, then November.
           </h2>
@@ -246,10 +228,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="range">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act II</ActLabel>
-            <ActLabel>Range</ActLabel>
-          </div>
+          <SectionEyebrow>Act II · Range</SectionEyebrow>
           <h2 id="range" className="signos-h2">
             Times Square to a sticker on a pole
           </h2>
@@ -285,10 +264,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="systems">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act III</ActLabel>
-            <ActLabel>Why systems</ActLabel>
-          </div>
+          <SectionEyebrow>Act III · Why systems</SectionEyebrow>
           <h2 id="systems" className="signos-h2">
             The queue is the craft
           </h2>
@@ -314,10 +290,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="email">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act III</ActLabel>
-            <ActLabel>Email</ActLabel>
-          </div>
+          <SectionEyebrow>Act III · Email</SectionEyebrow>
           <h2 id="email" className="signos-h2">
             If it fails over to Arial, it still has to be us
           </h2>
@@ -339,10 +312,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="ai">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act IV</ActLabel>
-            <ActLabel>AI as context</ActLabel>
-          </div>
+          <SectionEyebrow>Act IV · AI as context</SectionEyebrow>
           <h2 id="ai" className="signos-h2">
             Everyone was already using AI. None of it looked like Signos.
           </h2>
@@ -366,10 +336,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="selling">
         <div className="signos-wrap">
-          <div className="signos-act">
-            <ActLabel>Act V</ActLabel>
-            <ActLabel>Selling what we attacked</ActLabel>
-          </div>
+          <SectionEyebrow>Act V · Selling what we attacked</SectionEyebrow>
           <h2 id="selling" className="signos-h2">
             Merchandising the thing the culture already knew
           </h2>
@@ -418,7 +385,7 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="credits">
         <div className="signos-wrap">
-          <ActLabel>Credits</ActLabel>
+          <SectionEyebrow>Credits</SectionEyebrow>
           <h2 id="credits" className="signos-h2">
             Who held what
           </h2>
@@ -440,9 +407,10 @@ export default function SignosCaseStudyPage() {
       <footer className="signos-section">
         <div className="signos-wrap signos-next">
           <div>
-            <p className="signos-kicker">Next project</p>
+            <p className="eyebrow mb-3">Next project</p>
             <Link href="/work/cholula" className="signos-next-title">
               Cholula Hot Sauce
+              <span className="signos-page-accent">*</span>
             </Link>
           </div>
           <Link href="/work" className="signos-all-work">

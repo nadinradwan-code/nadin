@@ -11,10 +11,11 @@
   --green: #2bb673;
   --signos-sans: var(--font-signos-sans), "Archivo", "Helvetica Neue", Arial, sans-serif;
   --signos-mono: var(--font-signos-mono), "JetBrains Mono", ui-monospace, monospace;
+  --page-serif: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
+  --page-sans: var(--font-instrument-sans), "Instrument Sans", system-ui, sans-serif;
   background: var(--pebble-light);
   color: var(--stone);
-  font-family: var(--signos-sans);
-  font-feature-settings: "ss01" on;
+  font-family: var(--page-sans);
 }
 
 .signos-case * {
@@ -47,33 +48,26 @@
   padding: 4.5rem 0 2rem;
 }
 
-.signos-lockup {
-  height: 28px;
-  width: auto;
-  display: block;
-  margin-bottom: 2.5rem;
+.signos-page-h1 {
+  margin: 0.75rem 0 0;
+  font-family: var(--page-serif);
+  font-size: clamp(2.25rem, 6vw, 4rem);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.03em;
+  color: var(--stone);
 }
 
-.signos-display {
-  margin: 0.4rem 0 0;
-  font-size: clamp(4.2rem, 16vw, 11rem);
-  font-weight: 800;
-  font-stretch: extra-condensed;
-  line-height: 0.82;
-  letter-spacing: -0.04em;
-  text-transform: uppercase;
-}
-
-.signos-display em {
-  font-style: normal;
-  color: var(--cerise);
+.signos-page-accent {
+  color: var(--accent);
 }
 
 .signos-deck {
   max-width: 38rem;
-  margin-top: 1.75rem;
+  margin-top: 1.5rem;
+  font-family: var(--page-serif);
   font-size: clamp(1.15rem, 2.2vw, 1.5rem);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.35;
   color: var(--stone-med);
 }
@@ -91,9 +85,10 @@
   border: 1px solid var(--pebble);
   background: #fff;
   padding: 0.35rem 0.7rem;
-  font-family: var(--signos-mono);
-  font-size: 0.7rem;
-  letter-spacing: 0.06em;
+  font-family: var(--page-sans);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--stone-med);
 }
@@ -121,12 +116,12 @@
 
 .signos-h2 {
   margin: 0;
-  font-size: clamp(2.4rem, 6vw, 4.4rem);
-  font-weight: 800;
-  font-stretch: extra-condensed;
-  line-height: 0.9;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
+  font-family: var(--page-serif);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--stone);
 }
 
 .signos-lede,
@@ -190,9 +185,9 @@
 .signos-ai-steps h3,
 .signos-credit-grid h3 {
   margin: 0.35rem 0 0.7rem;
-  font-size: 1.35rem;
+  font-family: var(--page-serif);
+  font-size: 1.25rem;
   font-weight: 700;
-  font-stretch: condensed;
   letter-spacing: -0.02em;
 }
 
@@ -243,6 +238,8 @@
   background: var(--stone);
   color: #fff;
   padding: 1.5rem 1.5rem 1.25rem;
+  font-family: var(--signos-sans);
+  font-feature-settings: "ss01" on;
 }
 
 .signos-type-widths p {
@@ -277,8 +274,9 @@
 
 .signos-risks h3 {
   margin: 0;
+  font-family: var(--page-serif);
   font-size: 1.05rem;
-  font-stretch: condensed;
+  font-weight: 700;
 }
 
 .signos-risks p {
@@ -473,25 +471,26 @@
 
 .signos-next-title {
   display: block;
-  font-size: clamp(2rem, 5vw, 3.4rem);
-  font-weight: 800;
-  font-stretch: extra-condensed;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
-  line-height: 0.9;
+  font-family: var(--page-serif);
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+
+.signos-next-title:hover {
+  color: var(--accent);
 }
 
 .signos-all-work {
-  font-family: var(--signos-mono);
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  font-family: var(--page-sans);
+  font-size: 0.875rem;
   color: var(--stone-med);
   text-decoration: none;
 }
 
 .signos-all-work:hover {
-  color: var(--cerise);
+  color: var(--accent);
 }
 
 .signos-credit-grid ul {
