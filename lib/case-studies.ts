@@ -432,14 +432,6 @@ export const caseStudies: Record<string, CaseStudy> = {
         paragraphs: [
           "Project Denali was Conduit Digital Agency's strategic refinement and product launch in 2021. As Creative Manager, I led creative direction on the rollout: the four-act campaign across email, portal, and ads, the launch films, and the redesign of Conduit's flagship dashboard product (Live Reports), which was the core product underneath the announcement. Each act inherited from the one before it visually, but each one had its own tone and its own job.",
         ],
-        imageCaption:
-          "The Denali visual world. Every act of the four-act campaign inherited from this foundation.",
-        images: [
-          {
-            path: "/images/projects/denali/denali-inspiration.png",
-            alt: "Denali inspiration / visual world",
-          },
-        ],
       },
       {
         heading: "The problem",
