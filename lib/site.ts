@@ -22,7 +22,7 @@ export const navLinks = [
   { href: "/about", label: "About" },
   { href: "/resume", label: "Resume" },
   { href: "/contact", label: "Contact" },
-  { href: "/writing", label: "Thoughts" },
+  { href: "/writing", label: "Notebook" },
 ] as const;
 
 export const tickerItems = [
