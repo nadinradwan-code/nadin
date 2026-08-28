@@ -13,7 +13,9 @@ type Props = {
 };
 
 export function generateStaticParams() {
-  return getCaseStudySlugs().map((slug) => ({ slug }));
+  return getCaseStudySlugs()
+    .filter((slug) => slug !== "signos-health")
+    .map((slug) => ({ slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
