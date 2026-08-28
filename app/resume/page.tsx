@@ -12,7 +12,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Resume",
-  description: "Resume and experience — Art Director, AI-Native Design.",
+  description: "Resume and experience, Art Director, AI-Native Design.",
 };
 
 export default function ResumePage() {
@@ -58,7 +58,7 @@ export default function ResumePage() {
                 <p className="eyebrow mb-2">{role.dates}</p>
                 <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--foreground)] sm:text-2xl">
                   {role.title}
-                  <span className="text-[var(--muted)]"> — {role.company}</span>
+                  <span className="text-[var(--muted)]">, {role.company}</span>
                 </h2>
                 <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
                   {role.summary}

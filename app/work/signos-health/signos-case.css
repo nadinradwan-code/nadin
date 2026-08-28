@@ -34,6 +34,14 @@
   color: var(--stone-med);
 }
 
+.signos-num {
+  margin: 0;
+  font-family: var(--page-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--stone-light);
+}
+
 .signos-wrap {
   width: min(1180px, calc(100% - 2.5rem));
   margin-inline: auto;

@@ -74,7 +74,7 @@ export const signosScope = [
   {
     label: "02",
     title: "Product & site",
-    body: "The rebuilt marketing site as the first surface customers met, and the in-app experience where brand and product meet — working with our UI/UX designer on onboarding, the glucose curve, and the moments that mark progress.",
+    body: "The rebuilt marketing site as the first surface customers met, and the in-app experience where brand and product meet, working with our UI/UX designer on onboarding, the glucose curve, and the moments that mark progress.",
   },
   {
     label: "03",
@@ -90,7 +90,7 @@ export const signosOutcomes = [
   },
   {
     title: "Taste at the volume the algorithms want",
-    body: "The 2026 GLP-1 launch — hero, ad concepts, image library — ran out of the same parts as the rest of the brand. AI does the volume. Design review does the choosing.",
+    body: "The 2026 GLP-1 launch, hero, ad concepts, image library, ran out of the same parts as the rest of the brand. AI does the volume. Design review does the choosing.",
   },
 ] as const;
 

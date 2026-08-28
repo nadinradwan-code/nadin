@@ -126,7 +126,6 @@ export function AiFramework() {
     <ol className="signos-ai-steps">
       {signosAiSteps.map((step) => (
         <li key={step.n}>
-          <p className="signos-kicker">{step.n}</p>
           <h3>{step.title}</h3>
           <p>{step.body}</p>
         </li>

@@ -8,7 +8,7 @@ export const site = {
   statusPill: "online: brb brewing coffee",
   linkedin: "https://www.linkedin.com/in/nadinradwandesign/",
   instagram: "https://www.instagram.com/nadinradwan/",
-  /** Primary resume download — hosted with the site */
+  /** Primary resume download, hosted with the site */
   resumePdfPath: "/Nadin_Radwan_Resume_07-2026.pdf",
   resumePdfFilename: "Nadin_Radwan_Resume_07-2026.pdf",
   /** Optional Drive mirror */
@@ -81,7 +81,7 @@ export const hero = {
 
 export const homeAboutTeaser = {
   eyebrow: "About",
-  body: "I do my best work on small senior teams where the bar is high and the brief is real. Hands-on, in-the-file, based in Asbury Park, NJ — remote-first, open to hybrid roles.",
+  body: "I do my best work on small senior teams where the bar is high and the brief is real. Hands-on, in-the-file, based in Asbury Park, NJ, remote-first, open to hybrid roles.",
   cta: { label: "Full bio", href: "/about" },
   images: {
     desktop: "/images/home-about.png",
@@ -104,7 +104,7 @@ export const projects = [
     slug: "cholula",
     title: "Cholula Hot Sauce",
     description:
-      "Three-year run as lead designer on Uncap Real Flavor — national TV, chalk-on-slate print, social, broadcast.",
+      "Three-year run as lead designer on Uncap Real Flavor, national TV, chalk-on-slate print, social, broadcast.",
     tags: "Campaigns · Art Direction · Print · Video",
     image: "/images/projects/cholula/card-cholula.png",
     href: "/work/cholula",
@@ -131,7 +131,7 @@ export const projects = [
     slug: "project-denali",
     title: "Project Denali",
     description:
-      "Four-act product launch at Conduit Digital — dashboard redesign, partner tease, and paid launch.",
+      "Four-act product launch at Conduit Digital, dashboard redesign, partner tease, and paid launch.",
     tags: "Creative Direction · Branding · Product",
     image: "/images/projects/project-denali/card-project-denali.png",
     href: "/work/project-denali",
@@ -150,7 +150,7 @@ export const projects = [
 export const references = [
   {
     quote:
-      "She brings such a rare mix of professionalism, creative curiosity, and genuine warmth to her work. We worked together on products for continuous glucose monitor users — a space that requires empathy, scientific understanding, and strong systems thinking. Nadin is a true professional who delivers exceptional work, communicates clearly, and lifts up everyone around her.",
+      "She brings such a rare mix of professionalism, creative curiosity, and genuine warmth to her work. We worked together on products for continuous glucose monitor users, a space that requires empathy, scientific understanding, and strong systems thinking. Nadin is a true professional who delivers exceptional work, communicates clearly, and lifts up everyone around her.",
     name: "Jonathan Nguyen",
     title: "Lead Product Designer, SmartMoving Software",
     relationship: "Worked together at Signos Health",
@@ -160,7 +160,7 @@ export const references = [
       "Our client was always pleased by the thoughtful and creative work she would bring to the table, and her passion for the brand and its needs through creative interpretation was always apparent. She was a trusted partner and a true asset to the team. Any team would be lucky to have her.",
     name: "Kristin Reiser",
     title: "Account Director",
-    relationship: "Worked together at Spitball Advertising — 3 years on Cholula",
+    relationship: "Worked together at Spitball Advertising, 3 years on Cholula",
   },
   {
     quote:
@@ -185,7 +185,7 @@ export const references = [
   },
 ] as const;
 
-/** July 2026 resume copy — condensed on-page paragraphs from updatedExperienceFromPdf */
+/** July 2026 resume copy, condensed on-page paragraphs from updatedExperienceFromPdf */
 export const experience = [
   {
     dates: "Feb 2022 – Present",
@@ -199,7 +199,7 @@ export const experience = [
     title: "Creative Manager",
     company: "Conduit Digital",
     summary:
-      "Owned creative direction across web, video, and brand for a small in-house team. Led brand and art direction on Project Denali — a four-act staged launch that became the agency playbook for product launches that followed. Directed web, motion, and campaign deliverables; rebuilt workflows that materially reduced campaign turnaround time.",
+      "Owned creative direction across web, video, and brand for a small in-house team. Led brand and art direction on Project Denali, a four-act staged launch that became the agency playbook for product launches that followed. Directed web, motion, and campaign deliverables; rebuilt workflows that materially reduced campaign turnaround time.",
   },
   {
     dates: "Dec 2019 – Feb 2021",
@@ -229,18 +229,18 @@ export const about = {
     "I make work that gets shared, with AI doing the volume and me holding the bar.",
   paragraphs: [
     "I'm Nadin. I've been a designer for 11+ years. The work I'm proudest of is brand and campaign creative that travels: ads people screenshot, emails people open, brand systems that hold across surfaces a small team could never have shipped on its own.",
-    "I'm currently Art Director at Signos Health, where I drove design on the brand and product redesign for the first FDA-cleared continuous glucose system for weight management. The first-month sales target was met in three days. Site engagement work drove a 65% increase in email signups, and the email program lifted conversions 47%. The enterprise creative system — landing pages, conference displays, pitch decks, sales video — helped grow enterprise revenue 5x in a year. TV channel acquisition costs came down 70% under our art direction.",
-    "The part of my work I'm most excited about right now is AI. In 2024 I built the AI-augmented creative pipeline our team uses every day — Claude and ChatGPT for strategy and copy, Midjourney and Firefly for image, custom Claude Projects and GPTs for the recurring tasks. Concept-to-comp time dropped from days to hours, and the 2025 holiday launch shipped 222 brand-consistent assets out of the pipeline. AI is not a replacement for taste. It's a leverage layer for it. The curation is mine. The volume is what I delegate.",
+    "I'm currently Art Director at Signos Health, where I drove design on the brand and product redesign for the first FDA-cleared continuous glucose system for weight management. The first-month sales target was met in three days. Site engagement work drove a 65% increase in email signups, and the email program lifted conversions 47%. The enterprise creative system, landing pages, conference displays, pitch decks, sales video, helped grow enterprise revenue 5x in a year. TV channel acquisition costs came down 70% under our art direction.",
+    "The part of my work I'm most excited about right now is AI. In 2024 I built the AI-augmented creative pipeline our team uses every day, Claude and ChatGPT for strategy and copy, Midjourney and Firefly for image, custom Claude Projects and GPTs for the recurring tasks. Concept-to-comp time dropped from days to hours, and the 2025 holiday launch shipped 222 brand-consistent assets out of the pipeline. AI is not a replacement for taste. It's a leverage layer for it. The curation is mine. The volume is what I delegate.",
     "Before Signos, five years at Spitball Advertising, where I started as a Graphic Designer and grew into the lead designer role on the agency's biggest accounts. I led design and art-directed Cholula's Uncap Real Flavor campaign for three consecutive years, including the national TV commercial and the chalk-on-slate visual system that ran across print, social, and broadcast. I designed the TIME thyroid cancer microsite for Jubilant Draximage, which has been live for six years and is still referenced by patients and care teams. And I built the Castle Foods identity from logo through type, color, and packaging direction; the system is still in use today, absorbing new products without needing a rebuild.",
-    "Between Spitball and Signos, I led design at Raw Generation, where I built the modular email, web, SMS, and social system that let a small marketing team launch new campaigns in a day instead of a week, with double-digit lifts in email open and click-through. And I led creative direction on Project Denali at Conduit, a four-act launch that included redesigning the agency dashboard, teasing the rollout to partners, and the paid launch — a structure Conduit has continued to reuse.",
-    "I do my best work on small senior teams where the bar is high and the brief is real. I'm hands-on. I want to be in the file, not just art-directing it. I care about typography and color and motion that supports the story instead of getting in front of it. I'm based in Asbury Park, NJ — remote-first, open to hybrid roles.",
+    "Between Spitball and Signos, I led design at Raw Generation, where I built the modular email, web, SMS, and social system that let a small marketing team launch new campaigns in a day instead of a week, with double-digit lifts in email open and click-through. And I led creative direction on Project Denali at Conduit, a four-act launch that included redesigning the agency dashboard, teasing the rollout to partners, and the paid launch, a structure Conduit has continued to reuse.",
+    "I do my best work on small senior teams where the bar is high and the brief is real. I'm hands-on. I want to be in the file, not just art-directing it. I care about typography and color and motion that supports the story instead of getting in front of it. I'm based in Asbury Park, NJ, remote-first, open to hybrid roles.",
     "I'm currently open to senior in-house roles at companies working on something that meaningfully changes how people live: health tech, AI and creative tools, things that give people leverage over their own time. I also take on a small number of consulting engagements where I can help a founding team get their brand and product surface to a launch-ready bar.",
     "The fastest way to reach me is hello@nadinradwan.com.",
   ],
 } as const;
 
 export const contact = {
-  pageTitle: "Contact — Nadin Radwan",
+  pageTitle: "Contact, Nadin Radwan",
   headline: "Let's talk",
   body: "Open to senior in-house roles and select consulting engagements. The fastest way to reach me:",
   email: "hello@nadinradwan.com",
@@ -257,7 +257,7 @@ export const contact = {
 } as const;
 
 export const workIndex = {
-  pageTitle: "Work — Nadin Radwan",
+  pageTitle: "Work, Nadin Radwan",
   headline: "Selected case studies",
   intro:
     "Brand systems, campaigns, and creative direction across agency, DTC, and health tech.",

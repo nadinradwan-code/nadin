@@ -29,29 +29,22 @@ export const metadata: Metadata = {
   title: signosMeta.title,
   description: signosMeta.description,
   openGraph: {
-    title: `${signosMeta.title} — Nadin Radwan`,
+    title: `${signosMeta.title} · Nadin Radwan`,
     description: signosMeta.description,
   },
 };
-
-function SectionEyebrow({ children }: { children: string }) {
-  return <p className="eyebrow mb-3">{children}</p>;
-}
 
 export default function SignosCaseStudyPage() {
   return (
     <article className={`${archivo.variable} ${jetbrainsMono.variable} signos-case`}>
       <header className="signos-hero">
         <div className="signos-wrap">
-          <SectionEyebrow>{signosHero.kicker}</SectionEyebrow>
+          <p className="eyebrow mb-3">{signosHero.kicker}</p>
           <h1 className="signos-page-h1">
             Signos Health
             <span className="signos-page-accent">*</span>
           </h1>
           <p className="signos-deck">{signosHero.deck}</p>
-          <p className="eyebrow mt-6">
-            {signosHero.tags.join(" · ")}
-          </p>
           <p className="signos-intro">{signosHero.intro}</p>
         </div>
       </header>
@@ -61,7 +54,7 @@ export default function SignosCaseStudyPage() {
           src="/images/projects/signos/case/a01-hero.jpg"
           alt="Draw the Line campaign still: Signos wordmark and a member stretching outdoors with a CGM visible on her arm"
           id="A01"
-          caption="Hero, full bleed. Campaign still from Draw the Line — the glucose line as brand, not just a graph."
+          caption="Hero, full bleed. Campaign still from Draw the Line, with the glucose line as brand, not just a graph."
           priority
           sizes="100vw"
         />
@@ -69,7 +62,6 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="thesis">
         <div className="signos-wrap">
-          <SectionEyebrow>Thesis</SectionEyebrow>
           <h2 id="thesis" className="signos-h2">
             A smart friend with a degree in physiology
           </h2>
@@ -78,7 +70,7 @@ export default function SignosCaseStudyPage() {
           </p>
           <PillarGrid />
           <p className="signos-copy" style={{ marginTop: "2.25rem" }}>
-            Colour is physiology. The line runs hot and cold. Cerise is always a positive action — a CTA, a high you can do something with — never a warning, never a no. Gold is oversaturated. Violet is resting. Sky needs energy. Green is lean mass.
+            Colour is physiology. The line runs hot and cold. Cerise is always a positive action, a CTA, a high you can do something with, never a warning, never a no. Gold is oversaturated. Violet is resting. Sky needs energy. Green is lean mass.
           </p>
           <ColorPhysiology />
         </div>
@@ -86,7 +78,6 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="role">
         <div className="signos-wrap">
-          <SectionEyebrow>Role · Scope · Outcomes</SectionEyebrow>
           <h2 id="role" className="signos-h2">
             Sole visual designer, then art director
           </h2>
@@ -96,7 +87,6 @@ export default function SignosCaseStudyPage() {
           <div className="signos-grid-3" style={{ marginTop: "2rem" }}>
             {signosScope.map((item) => (
               <article key={item.title} className="signos-card">
-                <p className="signos-kicker">{item.label}</p>
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
               </article>
@@ -105,7 +95,6 @@ export default function SignosCaseStudyPage() {
           <div className="signos-grid-2" style={{ marginTop: "1.25rem" }}>
             {signosOutcomes.map((item) => (
               <article key={item.title} className="signos-card">
-                <p className="signos-kicker">Outcome</p>
                 <h3>{item.title}</h3>
                 <p>{item.body}</p>
               </article>
@@ -116,17 +105,16 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="act-i">
         <div className="signos-wrap">
-          <SectionEyebrow>Act I · The rebrand</SectionEyebrow>
           <h2 id="act-i" className="signos-h2">
             Hold the mandate. Spend it on a system.
           </h2>
           <p className="signos-lede" style={{ marginTop: "1.25rem" }}>
-            Brand advisor Andy Cunningham’s mandate was differentiation you can feel in a second and still trust in a medical context. I translated that into type, color, and rules a small team could actually ship against — not a poster that died in a deck.
+            Brand advisor Andy Cunningham’s mandate was differentiation you can feel in a second and still trust in a medical context. I translated that into type, color, and rules a small team could actually ship against, not a poster that died in a deck.
           </p>
           <div className="signos-risks">
             {signosRisks.map((risk) => (
               <article key={risk.n}>
-                <p className="signos-kicker">{risk.n}</p>
+                <p className="signos-num">{risk.n}</p>
                 <h3>{risk.title}</h3>
                 <p>{risk.body}</p>
               </article>
@@ -148,7 +136,6 @@ export default function SignosCaseStudyPage() {
           <div className="signos-grid-2" style={{ marginTop: "1.25rem" }}>
             {signosIdeas.map((idea) => (
               <article key={idea.title} className="signos-card">
-                <p className="signos-kicker">Contributed</p>
                 <h3>{idea.title}</h3>
                 <p>{idea.body}</p>
               </article>
@@ -165,7 +152,7 @@ export default function SignosCaseStudyPage() {
             <SignosMedia
               src="/images/projects/signos/case/app-home.jpg"
               alt="Signos iPhone app home screen showing current glucose, a predicted fast rise, and the color-graded curve"
-              caption="In-app home. The curve, the prediction, and Stone type — brand and product in the same file."
+              caption="In-app home. The curve, the prediction, and Stone type, brand and product in the same file."
               ratio="9 / 16"
               contain
               sizes="(max-width: 900px) 100vw, 50vw"
@@ -183,12 +170,11 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="act-ii">
         <div className="signos-wrap">
-          <SectionEyebrow>Act II · Two shoots</SectionEyebrow>
           <h2 id="act-ii" className="signos-h2">
             June, then November.
           </h2>
           <p className="signos-lede" style={{ marginTop: "1.25rem" }}>
-            Two productions, five months apart. June 2025 was appetite and refusal — Food Fight and DON&apos;T WANT. November was the lookbook: kitchen, table, the brand at home in real rooms. Same system. Different temperature.
+            Two productions, five months apart. June 2025 was appetite and refusal: Food Fight and DON&apos;T WANT. November was the lookbook: kitchen, table, the brand at home in real rooms. Same system. Different temperature.
           </p>
         </div>
         <div className="signos-wrap-wide">
@@ -197,7 +183,7 @@ export default function SignosCaseStudyPage() {
               src="/images/projects/signos/case/food-burger.jpg"
               alt="Overhead of a burger and fries, high-appetite food photography"
               id="A08"
-              caption="June 2025. Appetite as a brand register — the fight, not the salad."
+              caption="June 2025. Appetite as a brand register, the fight, not the salad."
               ratio="3 / 2"
             />
             <SignosMedia
@@ -212,7 +198,7 @@ export default function SignosCaseStudyPage() {
             <SignosMedia
               src="/images/projects/signos/case/coastal-restaurant.jpg"
               alt="Couple dining outdoors at a coastal restaurant"
-              caption="November, still. Range inside the lookbook — not every frame is a hero bowl."
+              caption="November, still. Range inside the lookbook, not every frame is a hero bowl."
               ratio="4 / 5"
             />
             <SignosMedia
@@ -228,12 +214,11 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="range">
         <div className="signos-wrap">
-          <SectionEyebrow>Act II · Range</SectionEyebrow>
           <h2 id="range" className="signos-h2">
             Times Square to a sticker on a pole
           </h2>
           <p className="signos-lede" style={{ marginTop: "1.25rem" }}>
-            January 2023, Times Square. Later, guerilla stickers. In between, campaign work that went after the GLP-1 cultural moment on the brand’s terms — then, later, merchandising for the program itself. If it only worked at one scale, it was a campaign, not a system.
+            January 2023, Times Square. Later, guerilla stickers. In between, campaign work that went after the GLP-1 cultural moment on the brand’s terms, then merchandising for the program itself. If it only worked at one scale, it was a campaign, not a system.
           </p>
         </div>
         <div className="signos-wrap-wide">
@@ -242,7 +227,7 @@ export default function SignosCaseStudyPage() {
               src="/images/projects/signos/case/a01-hero.jpg"
               alt="Draw the Line out-of-home style campaign frame"
               id="A09"
-              caption="OOH register. The line as a physical object in the world — Times Square, January 2023, and the boards that followed."
+              caption="OOH register. The line as a physical object in the world: Times Square, January 2023, and the boards that followed."
               ratio="16 / 9"
             />
             <div>
@@ -264,7 +249,6 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="systems">
         <div className="signos-wrap">
-          <SectionEyebrow>Act III · Why systems</SectionEyebrow>
           <h2 id="systems" className="signos-h2">
             The queue is the craft
           </h2>
@@ -272,10 +256,7 @@ export default function SignosCaseStudyPage() {
             In the launch week of August 2025 we shipped a new product, a rebuilt site, a new app interface, and a refreshed brand on the same week. That only works if the work is a queue of named jobs, not a pile of one-offs.
           </p>
           <div className="signos-systems" style={{ marginTop: "2rem" }}>
-            <div>
-              <p className="signos-kicker">A11 · The queue</p>
-              <ProductionQueue />
-            </div>
+            <ProductionQueue />
             <div className="signos-grid-3" style={{ gridTemplateColumns: "1fr" }}>
               {signosContentColumns.map((col) => (
                 <article key={col.title} className="signos-card">
@@ -290,12 +271,11 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="email">
         <div className="signos-wrap">
-          <SectionEyebrow>Act III · Email</SectionEyebrow>
           <h2 id="email" className="signos-h2">
             If it fails over to Arial, it still has to be us
           </h2>
           <p className="signos-lede" style={{ marginTop: "1.25rem" }}>
-            Email was the highest-volume customer touchpoint. Before the system, every send was a one-off. I built a modular library that shares components with the marketing site — header, footer, hero, product card, CTA — so marketing can assemble sends in Iterable without a designer in the loop, and a card fix improves both surfaces.
+            Email was the highest-volume customer touchpoint. Before the system, every send was a one-off. I built a modular library that shares components with the marketing site (header, footer, hero, product card, CTA) so marketing can assemble sends in Iterable without a designer in the loop, and a card fix improves both surfaces.
           </p>
           <FallbackFonts />
         </div>
@@ -312,15 +292,11 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="ai">
         <div className="signos-wrap">
-          <SectionEyebrow>Act IV · AI as context</SectionEyebrow>
           <h2 id="ai" className="signos-h2">
             Everyone was already using AI. None of it looked like Signos.
           </h2>
           <p className="signos-lede" style={{ marginTop: "1.25rem" }}>
             Engineers in Cursor, marketing in ChatGPT, contractors wherever they liked. We already had the answer: a brand guide, a voice guide, a mobile design system, a brand library, an email component library. What was missing was the instruction to load them first.
-          </p>
-          <p className="signos-kicker" style={{ marginTop: "2rem" }}>
-            A13 · AI context framework
           </p>
           <AiFramework />
         </div>
@@ -328,7 +304,7 @@ export default function SignosCaseStudyPage() {
           <SignosMedia
             src="/images/projects/signos/signos-ai-variance-hero.png"
             alt="Grid of AI-assisted Signos ad concepts and refined vertical variants"
-            caption="Two worked examples in one frame: strategy-model volume on top, design-reviewed refinement underneath. Verified volume is the GLP-1 launch library that ran out of these parts — not a vanity count."
+            caption="Two worked examples in one frame: strategy-model volume on top, design-reviewed refinement underneath. Verified volume is the GLP-1 launch library that ran out of these parts, not a vanity count."
             ratio="16 / 10"
           />
         </div>
@@ -336,7 +312,6 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="selling">
         <div className="signos-wrap">
-          <SectionEyebrow>Act V · Selling what we attacked</SectionEyebrow>
           <h2 id="selling" className="signos-h2">
             Merchandising the thing the culture already knew
           </h2>
@@ -359,7 +334,7 @@ export default function SignosCaseStudyPage() {
               src="/images/projects/signos/case/glp1-shake.jpg"
               alt="Protein shake and gym floor, merchandising photography for the GLP-1 program"
               id="A15"
-              caption="Merchandising, v5. The program in a kitchen and a gym — not a clinical tray."
+              caption="Merchandising, v5. The program in a kitchen and a gym, not a clinical tray."
               ratio="4 / 5"
             />
           </div>
@@ -385,14 +360,13 @@ export default function SignosCaseStudyPage() {
 
       <section className="signos-section" aria-labelledby="credits">
         <div className="signos-wrap">
-          <SectionEyebrow>Credits</SectionEyebrow>
           <h2 id="credits" className="signos-h2">
             Who held what
           </h2>
           <div className="signos-credit-grid" style={{ marginTop: "2rem" }}>
             {signosCredits.map((col) => (
               <section key={col.heading}>
-                <p className="signos-kicker">{col.heading}</p>
+                <h3>{col.heading}</h3>
                 <ul>
                   {col.items.map((item) => (
                     <li key={item}>{item}</li>
@@ -407,7 +381,6 @@ export default function SignosCaseStudyPage() {
       <footer className="signos-section">
         <div className="signos-wrap signos-next">
           <div>
-            <p className="eyebrow mb-3">Next project</p>
             <Link href="/work/cholula" className="signos-next-title">
               Cholula Hot Sauce
               <span className="signos-page-accent">*</span>
