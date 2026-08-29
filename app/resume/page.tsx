@@ -46,26 +46,30 @@ export default function ResumePage() {
           </a>
         </div>
 
-        <div className="mt-14 space-y-0">
-          {experience.map((role, index) => (
-            <div key={`${role.company}-${role.title}`}>
-              {index > 0 ? (
-                <div className="my-10 -mx-[max(1.5rem,env(safe-area-inset-left))] sm:-mx-[max(3rem,env(safe-area-inset-left))] lg:-mx-[max(5rem,env(safe-area-inset-left))]">
-                  <CompanyBanner {...companyBanners[index - 1]} />
-                </div>
-              ) : null}
-              <article>
-                <p className="eyebrow mb-2">{role.dates}</p>
-                <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--foreground)] sm:text-2xl">
-                  {role.title}
-                  <span className="text-[var(--muted)]">, {role.company}</span>
-                </h2>
-                <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
-                  {role.summary}
-                </p>
-              </article>
-            </div>
-          ))}
+        <div className="mt-14 space-y-12">
+          {experience.map((role, index) => {
+            const banner = companyBanners[index];
+
+            return (
+              <div key={`${role.company}-${role.title}`}>
+                {banner ? (
+                  <div className="mb-6">
+                    <CompanyBanner {...banner} />
+                  </div>
+                ) : null}
+                <article>
+                  <p className="eyebrow mb-2">{role.dates}</p>
+                  <h2 className="font-serif text-xl font-bold tracking-tight text-[var(--foreground)] sm:text-2xl">
+                    {role.title}
+                    <span className="text-[var(--muted)]">, {role.company}</span>
+                  </h2>
+                  <p className="mt-3 text-sm leading-relaxed text-[var(--muted)] sm:text-base">
+                    {role.summary}
+                  </p>
+                </article>
+              </div>
+            );
+          })}
         </div>
 
         <div className="mt-16 space-y-10 border-t border-[var(--border)] pt-12">
