@@ -3,7 +3,7 @@ export const site = {
   title: "Art Director, AI-Native Design",
   description:
     "Art Director with 11+ years of brand and product work. Currently at Signos Health, leading brand and AI-assisted creative for the first FDA-cleared glucose system for weight.",
-  email: "hello@nadinradwan.com",
+  email: "nadinradwan@gmail.com",
   location: "Asbury Park, NJ",
   statusPill: "online: brb brewing coffee",
   linkedin: "https://www.linkedin.com/in/nadinradwandesign/",
@@ -241,7 +241,7 @@ export const about = {
     "Between Spitball and Signos, I led design at Raw Generation, where I built the modular email, web, SMS, and social system that let a small marketing team launch new campaigns in a day instead of a week, with double-digit lifts in email open and click-through. And I led creative direction on Project Denali at Conduit, a four-act launch that included redesigning the agency dashboard, teasing the rollout to partners, and the paid launch, a structure Conduit has continued to reuse.",
     "I do my best work on small senior teams where the bar is high and the brief is real. I'm hands-on. I want to be in the file, not just art-directing it. I care about typography and color and motion that supports the story instead of getting in front of it. I'm based in Asbury Park, NJ, remote-first, open to hybrid roles.",
     "I'm currently open to senior in-house roles at companies working on something that meaningfully changes how people live: health tech, AI and creative tools, things that give people leverage over their own time. I also take on a small number of consulting engagements where I can help a founding team get their brand and product surface to a launch-ready bar.",
-    "The fastest way to reach me is hello@nadinradwan.com.",
+    "The fastest way to reach me is nadinradwan@gmail.com.",
   ],
 } as const;
 
@@ -249,7 +249,7 @@ export const contact = {
   pageTitle: "Contact, Nadin Radwan",
   headline: "Let's talk",
   body: "Open to senior in-house roles and select consulting engagements. The fastest way to reach me:",
-  email: "hello@nadinradwan.com",
+  email: "nadinradwan@gmail.com",
   links: [
     {
       label: "LinkedIn",
