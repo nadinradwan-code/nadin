@@ -2,7 +2,7 @@ export const site = {
   name: "Nadin Radwan",
   title: "Art Director, AI-Native Design",
   description:
-    "Art Director with 11+ years of brand and product work. Currently at Signos Health, leading brand and AI-assisted creative for the first FDA-cleared glucose system for weight.",
+    "Art Director with 12+ years of brand and product work. Currently at Signos Health, leading brand and AI-assisted creative for the first FDA-cleared glucose system for weight.",
   email: "nadinradwan@gmail.com",
   location: "Asbury Park, NJ",
   statusPill: "online: brb brewing coffee",
@@ -67,7 +67,7 @@ export const hero = {
   nameLine: "I'm Nadin Radwan",
   accentMark: "*",
   roleLine: "Art Director, AI-Native Design",
-  body: "11+ years building brand and product work that ships. Currently Art Director at Signos Health, where I drove design on the rebrand of the first FDA-cleared glucose system for weight and built the AI pipeline the team uses every day. Open to senior in-house roles at companies changing how people live, and select consulting engagements.",
+  body: "12+ years building brand and product work that ships. Currently Art Director at Signos Health, where I drove design on the rebrand of the first FDA-cleared glucose system for weight and built the AI pipeline the team uses every day. Open to senior in-house roles at companies changing how people live, and select consulting engagements.",
   ctas: [
     { label: "View work", href: "/#selected-work" },
     { label: "Get in touch", href: "/contact" },
@@ -234,7 +234,7 @@ export const about = {
   headline:
     "I make work that gets shared, with AI doing the volume and me holding the bar.",
   paragraphs: [
-    "I'm Nadin. I've been a designer for 11+ years. The work I'm proudest of is brand and campaign creative that travels: ads people screenshot, emails people open, brand systems that hold across surfaces a small team could never have shipped on its own.",
+    "I'm Nadin. I've been a designer for 12+ years. The work I'm proudest of is brand and campaign creative that travels: ads people screenshot, emails people open, brand systems that hold across surfaces a small team could never have shipped on its own.",
     "I'm currently Art Director at Signos Health, where I drove design on the brand and product redesign for the first FDA-cleared continuous glucose system for weight management. The first-month sales target was met in three days. Site engagement work drove a 65% increase in email signups, and the email program lifted conversions 47%. The enterprise creative system, landing pages, conference displays, pitch decks, sales video, helped grow enterprise revenue 5x in a year. TV channel acquisition costs came down 70% under our art direction.",
     "The part of my work I'm most excited about right now is AI. In 2024 I built the AI-augmented creative pipeline our team uses every day, Claude and ChatGPT for strategy and copy, Midjourney and Firefly for image, custom Claude Projects and GPTs for the recurring tasks. Concept-to-comp time dropped from days to hours, and the 2025 holiday launch shipped 222 brand-consistent assets out of the pipeline. AI is not a replacement for taste. It's a leverage layer for it. The curation is mine. The volume is what I delegate.",
     "Before Signos, five years at Spitball Advertising, where I started as a Graphic Designer and grew into the lead designer role on the agency's biggest accounts. I led design and art-directed Cholula's Uncap Real Flavor campaign for three consecutive years, including the national TV commercial and the chalk-on-slate visual system that ran across print, social, and broadcast. I designed the TIME thyroid cancer microsite for Jubilant Draximage, which has been live for six years and is still referenced by patients and care teams. And I built the Castle Foods identity from logo through type, color, and packaging direction; the system is still in use today, absorbing new products without needing a rebuild.",
