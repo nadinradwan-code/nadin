@@ -98,6 +98,7 @@ export const projects = [
       "Brand, product redesign, and AI-assisted creative for the first FDA-cleared glucose system for weight.",
     tags: "Branding · Product UI · Campaigns · AI",
     image: "/images/projects/signos/card-signos.png",
+    tickerImage: "/images/projects/ticker/signos.png",
     href: "/work/signos-health",
   },
   {
@@ -107,6 +108,7 @@ export const projects = [
       "Three-year run as lead designer on Uncap Real Flavor, national TV, chalk-on-slate print, social, broadcast.",
     tags: "Campaigns · Art Direction · Print · Video",
     image: "/images/projects/cholula/card-cholula.png",
+    tickerImage: "/images/projects/ticker/cholula.png",
     href: "/work/cholula",
   },
   {
@@ -116,6 +118,7 @@ export const projects = [
       "Modular email, web, SMS, and social system that took campaign launch time from a week to a day.",
     tags: "Email · Web · Social · SMS",
     image: "/images/projects/raw-generation/card-raw-generation.png",
+    tickerImage: "/images/projects/ticker/raw-generation.png",
     href: "/work/raw-generation",
   },
   {
@@ -125,6 +128,7 @@ export const projects = [
       "Built the brand from logo through type, color, and packaging direction. System still in use, absorbing new products without a rebuild.",
     tags: "Brand Identity · Packaging · Design System",
     image: "/images/projects/castle-foods/card-castle-foods.png",
+    tickerImage: "/images/projects/ticker/castle-foods.png",
     href: "/work/castle-foods",
   },
   {
@@ -134,6 +138,7 @@ export const projects = [
       "Four-act product launch at Conduit Digital, dashboard redesign, partner tease, and paid launch.",
     tags: "Creative Direction · Branding · Product",
     image: "/images/projects/project-denali/card-project-denali.png",
+    tickerImage: "/images/projects/ticker/project-denali.png",
     href: "/work/project-denali",
   },
   {
@@ -143,6 +148,7 @@ export const projects = [
       "Patient-education microsite for Jubilant Draximage. Live six years, still referenced by patients and care teams.",
     tags: "Web Design · Illustration · Branding",
     image: "/images/projects/time-thyroid/card-time-thyroid.png",
+    tickerImage: "/images/projects/ticker/time-thyroid.png",
     href: "/work/time-thyroid",
   },
 ] as const;
