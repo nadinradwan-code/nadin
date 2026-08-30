@@ -84,7 +84,7 @@ export const hero = {
   images: {
     desktop: "/images/hero-desktop.png",
     mobile: "/images/hero-mobile.png",
-    alt: "Portrait of Nadin Radwan",
+    alt: "Nadin Radwan holding two small paintings",
   },
 } as const;
 
