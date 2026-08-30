@@ -28,7 +28,8 @@ export type WritingBody = {
 };
 
 export const writingMeta = {
-  pageTitle: "Notebook · Nadin Radwan",
+  pageTitle: "Nadin's Notes · Nadin Radwan",
+  pageHeading: "Nadin's Notes",
   navLabel: "Notebook",
   intro:
     "Notes on AI-native design, creative workflow, and building at the intersection of design and technology.",

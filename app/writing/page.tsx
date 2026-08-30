@@ -4,7 +4,7 @@ import Link from "next/link";
 import { formatPostDate, writingMeta, writingPosts } from "@/lib/writing";
 
 export const metadata: Metadata = {
-  title: "Notebook",
+  title: writingMeta.pageHeading,
   description: writingMeta.intro,
 };
 
@@ -14,7 +14,7 @@ export default function WritingPage() {
       <div className="mx-auto max-w-3xl">
         <p className="eyebrow mb-3">{writingMeta.navLabel}</p>
         <h1 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight tracking-[-0.02em]">
-          Notebook
+          {writingMeta.pageHeading}
           <span className="text-[var(--accent)]">*</span>
         </h1>
         <p className="mt-6 max-w-xl text-base leading-relaxed text-[var(--muted)]">
