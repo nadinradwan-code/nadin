@@ -28,11 +28,11 @@ export const navLinks = [
 export const avatars = {
   resume: {
     src: "/images/avatars/avatar-resume-wave.png",
-    alt: "Illustrated avatar of Nadin Radwan waving",
+    alt: "Portrait of Nadin Radwan",
   },
   contact: {
     src: "/images/avatars/avatar-contact-phone.png",
-    alt: "Illustrated avatar of Nadin Radwan on the phone",
+    alt: "Portrait of Nadin Radwan",
   },
 } as const;
 
@@ -40,26 +40,26 @@ export const companyBanners = [
   {
     company: "Signos Health",
     logoAlt: "Signos Health",
-    backgroundColor: "#0B3D2E",
+    backgroundColor: "#FD3576",
     textColor: "#ffffff",
   },
   {
     company: "Conduit Digital",
     logoAlt: "Conduit Digital",
-    backgroundColor: "#1A1A2E",
+    backgroundColor: "#00A8E9",
     textColor: "#ffffff",
   },
   {
     company: "Raw Generation",
     logoAlt: "Raw Generation",
-    backgroundColor: "#2D5016",
+    backgroundColor: "#7519C6",
     textColor: "#ffffff",
   },
   {
     company: "Spitball Advertising",
     logoAlt: "Spitball Advertising",
-    backgroundColor: "#C41E3A",
-    textColor: "#ffffff",
+    backgroundColor: "#87C957",
+    textColor: "#0F0F0F",
   },
 ] as const;
 
