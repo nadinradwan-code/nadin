@@ -57,7 +57,9 @@ export default function Footer() {
             <p className="text-xs text-[var(--muted)]">
               © {new Date().getFullYear()} {site.name}. All rights reserved.
             </p>
-            <p className="mt-2 text-xs text-[var(--muted)]">Designed with care.</p>
+            <p className="mt-2 text-xs text-[var(--muted)]">
+              Designed with creativity, care, Cursor, Claude, and ChatGPT.
+            </p>
           </div>
         </div>
       </div>

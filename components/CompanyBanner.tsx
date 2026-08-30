@@ -17,7 +17,7 @@ export default function CompanyBanner({
 }: CompanyBannerData) {
   return (
     <div
-      className="relative flex h-16 w-full items-center justify-center overflow-hidden sm:h-20"
+      className="relative flex h-16 w-full items-center justify-center overflow-hidden rounded-2xl sm:h-20"
       style={{ backgroundColor }}
       role="img"
       aria-label={`${company} banner`}

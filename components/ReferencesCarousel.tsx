@@ -46,54 +46,56 @@ export default function ReferencesCarousel() {
   };
 
   return (
-    <section className="page-pad border-t border-[var(--border)] py-16 sm:py-20 lg:py-28">
-      <div className="mx-auto max-w-4xl">
-        <p className="eyebrow mb-8 sm:mb-10">References</p>
-        <div
-          className={`reference-fade min-h-[200px] sm:min-h-[220px] ${
-            visible ? "reference-fade-active" : "reference-fade-enter"
-          }`}
-          onTouchStart={onTouchStart}
-          onTouchEnd={onTouchEnd}
-        >
-          <blockquote className="font-serif text-[clamp(1.25rem,4.5vw,1.875rem)] leading-snug tracking-tight text-[var(--foreground)]">
-            “{current.quote}”
-          </blockquote>
-          <div className="mt-6 sm:mt-8">
-            <p className="text-sm font-semibold text-[var(--foreground)]">
-              {current.name}
-            </p>
-            <p className="mt-1 text-sm text-[var(--muted)]">{current.title}</p>
-            <p className="mt-1 text-sm text-[var(--muted)]">
-              {current.relationship}
-            </p>
-          </div>
-        </div>
-
-        <div className="mt-8 flex items-center gap-2 sm:mt-10 sm:gap-4">
-          <button
-            type="button"
-            onClick={() => go(index - 1)}
-            className="touch-target text-lg text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
-            aria-label="Previous reference"
-          >
-            ←
-          </button>
-          <p className="min-w-[4.5rem] text-center text-xs tracking-widest text-[var(--muted)] uppercase">
-            {index + 1} / {references.length}
+    <section className="bg-[var(--foreground)] text-[var(--background)]">
+      <div className="page-pad py-16 sm:py-20 lg:py-28">
+        <div className="mx-auto max-w-4xl">
+          <p className="mb-8 text-[11px] font-semibold uppercase tracking-[0.1em] text-white/50 sm:mb-10">
+            References
           </p>
-          <button
-            type="button"
-            onClick={() => go(index + 1)}
-            className="touch-target text-lg text-[var(--muted)] transition-colors hover:text-[var(--foreground)]"
-            aria-label="Next reference"
+          <div
+            className={`reference-fade min-h-[200px] sm:min-h-[220px] ${
+              visible ? "reference-fade-active" : "reference-fade-enter"
+            }`}
+            onTouchStart={onTouchStart}
+            onTouchEnd={onTouchEnd}
           >
-            →
-          </button>
+            <blockquote className="font-serif text-[clamp(1.25rem,4.5vw,1.875rem)] leading-snug tracking-tight text-white">
+              “{current.quote}”
+            </blockquote>
+            <div className="mt-6 sm:mt-8">
+              <p className="text-sm font-semibold text-white">{current.name}</p>
+              <p className="mt-1 text-sm text-white/60">{current.title}</p>
+              <p className="mt-1 text-sm text-white/60">
+                {current.relationship}
+              </p>
+            </div>
+          </div>
+
+          <div className="mt-8 flex items-center gap-2 sm:mt-10 sm:gap-4">
+            <button
+              type="button"
+              onClick={() => go(index - 1)}
+              className="touch-target text-lg text-[var(--accent)] transition-colors hover:text-white"
+              aria-label="Previous reference"
+            >
+              ←
+            </button>
+            <p className="min-w-[4.5rem] text-center text-xs tracking-widest text-[var(--accent)] uppercase">
+              {index + 1} / {references.length}
+            </p>
+            <button
+              type="button"
+              onClick={() => go(index + 1)}
+              className="touch-target text-lg text-[var(--accent)] transition-colors hover:text-white"
+              aria-label="Next reference"
+            >
+              →
+            </button>
+          </div>
+          <p className="mt-4 text-xs text-white/45 sm:hidden">
+            Swipe to browse references
+          </p>
         </div>
-        <p className="mt-4 text-xs text-[var(--muted)] sm:hidden">
-          Swipe to browse references
-        </p>
       </div>
     </section>
   );

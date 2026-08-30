@@ -2,8 +2,8 @@ export const site = {
   name: "Nadin Radwan",
   title: "Art Director, AI-Native Design",
   description:
-    "Art Director with 11+ years of brand and product work. Currently at Signos Health, leading brand and AI-assisted creative for the first FDA-cleared glucose system for weight.",
-  email: "hello@nadinradwan.com",
+    "Art Director with 12+ years of brand and product work. Currently at Signos Health, leading brand and AI-assisted creative for the first FDA-cleared glucose system for weight.",
+  email: "nadinradwan@gmail.com",
   location: "Asbury Park, NJ",
   statusPill: "online: brb brewing coffee",
   linkedin: "https://www.linkedin.com/in/nadinradwandesign/",
@@ -67,7 +67,7 @@ export const hero = {
   nameLine: "I'm Nadin Radwan",
   accentMark: "*",
   roleLine: "Art Director, AI-Native Design",
-  body: "11+ years building brand and product work that ships. Currently Art Director at Signos Health, where I drove design on the rebrand of the first FDA-cleared glucose system for weight and built the AI pipeline the team uses every day. Open to senior in-house roles at companies changing how people live, and select consulting engagements.",
+  body: "12+ years building brand and product work that ships. Currently Art Director at Signos Health, where I drove design on the rebrand of the first FDA-cleared glucose system for weight and built the AI pipeline the team uses every day. Open to senior in-house roles at companies changing how people live, and select consulting engagements.",
   ctas: [
     { label: "View work", href: "/#selected-work" },
     { label: "Get in touch", href: "/contact" },
@@ -98,6 +98,7 @@ export const projects = [
       "Brand, product redesign, and AI-assisted creative for the first FDA-cleared glucose system for weight.",
     tags: "Branding · Product UI · Campaigns · AI",
     image: "/images/projects/signos/card-signos.png",
+    tickerImage: "/images/projects/ticker/signos.png",
     href: "/work/signos-health",
   },
   {
@@ -107,6 +108,7 @@ export const projects = [
       "Three-year run as lead designer on Uncap Real Flavor, national TV, chalk-on-slate print, social, broadcast.",
     tags: "Campaigns · Art Direction · Print · Video",
     image: "/images/projects/cholula/card-cholula.png",
+    tickerImage: "/images/projects/ticker/cholula.png",
     href: "/work/cholula",
   },
   {
@@ -116,6 +118,7 @@ export const projects = [
       "Modular email, web, SMS, and social system that took campaign launch time from a week to a day.",
     tags: "Email · Web · Social · SMS",
     image: "/images/projects/raw-generation/card-raw-generation.png",
+    tickerImage: "/images/projects/ticker/raw-generation.png",
     href: "/work/raw-generation",
   },
   {
@@ -125,6 +128,7 @@ export const projects = [
       "Built the brand from logo through type, color, and packaging direction. System still in use, absorbing new products without a rebuild.",
     tags: "Brand Identity · Packaging · Design System",
     image: "/images/projects/castle-foods/card-castle-foods.png",
+    tickerImage: "/images/projects/ticker/castle-foods.png",
     href: "/work/castle-foods",
   },
   {
@@ -134,6 +138,7 @@ export const projects = [
       "Four-act product launch at Conduit Digital, dashboard redesign, partner tease, and paid launch.",
     tags: "Creative Direction · Branding · Product",
     image: "/images/projects/project-denali/card-project-denali.png",
+    tickerImage: "/images/projects/ticker/project-denali.png",
     href: "/work/project-denali",
   },
   {
@@ -143,6 +148,7 @@ export const projects = [
       "Patient-education microsite for Jubilant Draximage. Live six years, still referenced by patients and care teams.",
     tags: "Web Design · Illustration · Branding",
     image: "/images/projects/time-thyroid/card-time-thyroid.png",
+    tickerImage: "/images/projects/ticker/time-thyroid.png",
     href: "/work/time-thyroid",
   },
 ] as const;
@@ -228,14 +234,14 @@ export const about = {
   headline:
     "I make work that gets shared, with AI doing the volume and me holding the bar.",
   paragraphs: [
-    "I'm Nadin. I've been a designer for 11+ years. The work I'm proudest of is brand and campaign creative that travels: ads people screenshot, emails people open, brand systems that hold across surfaces a small team could never have shipped on its own.",
+    "I'm Nadin. I've been a designer for 12+ years. The work I'm proudest of is brand and campaign creative that travels: ads people screenshot, emails people open, brand systems that hold across surfaces a small team could never have shipped on its own.",
     "I'm currently Art Director at Signos Health, where I drove design on the brand and product redesign for the first FDA-cleared continuous glucose system for weight management. The first-month sales target was met in three days. Site engagement work drove a 65% increase in email signups, and the email program lifted conversions 47%. The enterprise creative system, landing pages, conference displays, pitch decks, sales video, helped grow enterprise revenue 5x in a year. TV channel acquisition costs came down 70% under our art direction.",
     "The part of my work I'm most excited about right now is AI. In 2024 I built the AI-augmented creative pipeline our team uses every day, Claude and ChatGPT for strategy and copy, Midjourney and Firefly for image, custom Claude Projects and GPTs for the recurring tasks. Concept-to-comp time dropped from days to hours, and the 2025 holiday launch shipped 222 brand-consistent assets out of the pipeline. AI is not a replacement for taste. It's a leverage layer for it. The curation is mine. The volume is what I delegate.",
     "Before Signos, five years at Spitball Advertising, where I started as a Graphic Designer and grew into the lead designer role on the agency's biggest accounts. I led design and art-directed Cholula's Uncap Real Flavor campaign for three consecutive years, including the national TV commercial and the chalk-on-slate visual system that ran across print, social, and broadcast. I designed the TIME thyroid cancer microsite for Jubilant Draximage, which has been live for six years and is still referenced by patients and care teams. And I built the Castle Foods identity from logo through type, color, and packaging direction; the system is still in use today, absorbing new products without needing a rebuild.",
     "Between Spitball and Signos, I led design at Raw Generation, where I built the modular email, web, SMS, and social system that let a small marketing team launch new campaigns in a day instead of a week, with double-digit lifts in email open and click-through. And I led creative direction on Project Denali at Conduit, a four-act launch that included redesigning the agency dashboard, teasing the rollout to partners, and the paid launch, a structure Conduit has continued to reuse.",
     "I do my best work on small senior teams where the bar is high and the brief is real. I'm hands-on. I want to be in the file, not just art-directing it. I care about typography and color and motion that supports the story instead of getting in front of it. I'm based in Asbury Park, NJ, remote-first, open to hybrid roles.",
     "I'm currently open to senior in-house roles at companies working on something that meaningfully changes how people live: health tech, AI and creative tools, things that give people leverage over their own time. I also take on a small number of consulting engagements where I can help a founding team get their brand and product surface to a launch-ready bar.",
-    "The fastest way to reach me is hello@nadinradwan.com.",
+    "The fastest way to reach me is nadinradwan@gmail.com.",
   ],
 } as const;
 
@@ -243,7 +249,7 @@ export const contact = {
   pageTitle: "Contact, Nadin Radwan",
   headline: "Let's talk",
   body: "Open to senior in-house roles and select consulting engagements. The fastest way to reach me:",
-  email: "hello@nadinradwan.com",
+  email: "nadinradwan@gmail.com",
   links: [
     {
       label: "LinkedIn",
