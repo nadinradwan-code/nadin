@@ -52,7 +52,7 @@ export const companyBanners = [
   {
     company: "Raw Generation",
     logoAlt: "Raw Generation",
-    backgroundColor: "#2D5016",
+    backgroundColor: "#7519C6",
     textColor: "#ffffff",
   },
   {
