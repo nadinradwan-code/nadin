@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import AvatarCircle from "@/components/AvatarCircle";
-import { avatars, contact, site } from "@/lib/site";
+import { contact, site } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -12,14 +11,6 @@ export default function ContactPage() {
   return (
     <section className="page-pad py-16 lg:py-24">
       <div className="mx-auto max-w-3xl">
-        <div className="mb-10 flex flex-col items-center text-center">
-          <AvatarCircle
-            src={avatars.contact.src}
-            alt={avatars.contact.alt}
-            size="lg"
-          />
-        </div>
-
         <p className="eyebrow mb-3 text-center">Contact</p>
         <h1 className="text-center font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight tracking-[-0.02em]">
           {contact.headline}

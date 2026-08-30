@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import AvatarCircle from "@/components/AvatarCircle";
 import CompanyBanner from "@/components/CompanyBanner";
 import {
-  avatars,
   capabilities,
   companyBanners,
   education,
@@ -20,12 +18,7 @@ export default function ResumePage() {
     <section className="page-pad py-16 lg:py-24">
       <div className="mx-auto max-w-3xl">
         <div className="mb-10 flex flex-col items-center text-center sm:mb-14">
-          <AvatarCircle
-            src={avatars.resume.src}
-            alt={avatars.resume.alt}
-            size="lg"
-          />
-          <p className="eyebrow mt-6 mb-3">Resume</p>
+          <p className="eyebrow mb-3">Resume</p>
           <h1 className="font-serif text-[clamp(32px,5vw,56px)] font-bold leading-tight tracking-[-0.02em] text-[var(--foreground)]">
             Experience
             <span className="font-serif text-[var(--accent)]">*</span>
