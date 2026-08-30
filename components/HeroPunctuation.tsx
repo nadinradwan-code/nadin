@@ -28,7 +28,7 @@ export default function HeroPunctuation() {
       "(prefers-reduced-motion: reduce)",
     ).matches;
     const desktop = window.matchMedia("(min-width: 768px)").matches;
-    const count = desktop ? 58 : 34;
+    const count = desktop ? 64 : 38;
 
     layer.replaceChildren();
     const marks: Mark[] = [];
@@ -39,16 +39,16 @@ export default function HeroPunctuation() {
       el.textContent = glyph;
       el.className = glyph === "*" ? "hero-mark hero-mark-star" : "hero-mark";
       const size =
-        glyph === "*" ? 13 + Math.random() * 20 : 11 + Math.random() * 9;
+        glyph === "*" ? 16 + Math.random() * 26 : 13 + Math.random() * 12;
       el.style.fontSize = `${size}px`;
-      el.style.opacity = String(0.16 + Math.random() * 0.42);
+      el.style.opacity = String(desktop ? 0.42 + Math.random() * 0.48 : 0.32 + Math.random() * 0.5);
       layer.appendChild(el);
       marks.push({
         el,
         x: Math.random() * 0.92 + 0.04,
         y: Math.random() * 0.88 + 0.06,
-        vx: (Math.random() - 0.5) * 0.00028,
-        vy: (Math.random() - 0.5) * 0.00022,
+        vx: (Math.random() - 0.5) * 0.0004,
+        vy: (Math.random() - 0.5) * 0.00032,
         phase: Math.random() * Math.PI * 2,
         spin: (Math.random() - 0.5) * 0.18,
       });
@@ -119,11 +119,11 @@ export default function HeroPunctuation() {
         const dist = Math.sqrt(offsetX * offsetX + offsetY * offsetY) || 0.0001;
 
         if (pointer.burst > 0.03) {
-          const force = (pointer.burst * 0.09) / dist;
+          const force = (pointer.burst * 0.2) / dist;
           dx += offsetX * force;
           dy += offsetY * force;
-        } else if (pointer.active && dist < 0.2) {
-          const pull = (0.2 - dist) * 0.14;
+        } else if (pointer.active && dist < 0.32) {
+          const pull = (0.32 - dist) * 0.28;
           dx -= offsetX * pull;
           dy -= offsetY * pull;
         }

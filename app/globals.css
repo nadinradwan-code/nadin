@@ -197,7 +197,7 @@ body {
   font-size: clamp(140px, 28vw, 340px);
   line-height: 0.8;
   color: var(--accent);
-  opacity: 0.1;
+  opacity: 0.18;
   animation: hero-breathe 8s ease-in-out infinite;
 }
 
@@ -251,11 +251,15 @@ body {
 
 @media (min-width: 768px) {
   .hero-mark {
-    color: color-mix(in srgb, var(--accent) 80%, white);
+    color: color-mix(in srgb, var(--accent) 70%, white);
   }
 
   .hero-ghost-asterisk {
-    opacity: 0.14;
+    opacity: 0.22;
+  }
+
+  .hero-crop {
+    opacity: 0.75;
   }
 }
 

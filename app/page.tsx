@@ -75,7 +75,7 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-contain object-center"
+            className="object-contain object-center md:hidden"
           />
           <div className="absolute inset-0 hidden bg-gradient-to-r from-black/75 via-black/35 to-transparent md:block" />
         </div>
