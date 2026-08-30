@@ -21,7 +21,7 @@ export default function AvatarCircle({
 }: AvatarCircleProps) {
   return (
     <div
-      className={`relative shrink-0 overflow-hidden rounded-full border-2 border-[var(--border)] bg-[var(--background)] shadow-sm ${sizeClasses[size]} ${className}`}
+      className={`relative shrink-0 overflow-hidden rounded-full border-[3px] border-[var(--accent)] bg-[var(--background)] shadow-sm ${sizeClasses[size]} ${className}`}
     >
       <Image src={src} alt={alt} fill sizes="176px" className="object-cover" />
     </div>

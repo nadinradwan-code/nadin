@@ -28,11 +28,11 @@ export const navLinks = [
 export const avatars = {
   resume: {
     src: "/images/avatars/avatar-resume-wave.png",
-    alt: "Illustrated avatar of Nadin Radwan waving",
+    alt: "Portrait of Nadin Radwan",
   },
   contact: {
     src: "/images/avatars/avatar-contact-phone.png",
-    alt: "Illustrated avatar of Nadin Radwan on the phone",
+    alt: "Portrait of Nadin Radwan",
   },
 } as const;
 
