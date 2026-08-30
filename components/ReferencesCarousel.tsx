@@ -59,8 +59,22 @@ export default function ReferencesCarousel() {
             onTouchStart={onTouchStart}
             onTouchEnd={onTouchEnd}
           >
-            <blockquote className="font-serif text-[clamp(1.25rem,4.5vw,1.875rem)] leading-snug tracking-tight text-white">
-              “{current.quote}”
+            <blockquote className="relative">
+              <span
+                aria-hidden="true"
+                className="block font-serif text-[clamp(4.75rem,14vw,8.5rem)] leading-[0.6] text-[var(--accent)]"
+              >
+                “
+              </span>
+              <p className="mt-3 font-serif text-[clamp(1.25rem,4.5vw,1.875rem)] leading-snug tracking-tight text-white sm:mt-4">
+                {current.quote}
+              </p>
+              <span
+                aria-hidden="true"
+                className="mt-2 block text-right font-serif text-[clamp(4.75rem,14vw,8.5rem)] leading-[0.6] text-[var(--accent)]"
+              >
+                ”
+              </span>
             </blockquote>
             <div className="mt-6 sm:mt-8">
               <p className="text-sm font-semibold text-white">{current.name}</p>
