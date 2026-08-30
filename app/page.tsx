@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import HeroPunctuation from "@/components/HeroPunctuation";
 import ProjectCard from "@/components/ProjectCard";
 import ReferencesCarousel from "@/components/ReferencesCarousel";
 import WorkSampleTicker from "@/components/WorkSampleTicker";
@@ -52,19 +53,21 @@ export default function HomePage() {
   return (
     <>
       {/* Mobile: content first, image second. Desktop: full-bleed overlay */}
-      <section className="bg-[var(--background)] md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden md:bg-[var(--foreground)] md:text-[var(--background)]">
-        <div className="page-pad flex flex-col pt-28 pb-10 md:hidden">
+      <section className="relative overflow-hidden bg-[var(--background)] md:min-h-[calc(100svh-65px)] md:bg-[var(--foreground)] md:text-[var(--background)]">
+        <HeroPunctuation />
+
+        <div className="page-pad relative z-10 flex flex-col pt-28 pb-8 md:hidden">
           <HeroContent />
         </div>
 
-        <div className="relative aspect-[3/4] max-h-[34rem] w-full md:absolute md:inset-0 md:aspect-auto md:max-h-none md:min-h-[calc(100svh-65px)]">
+        <div className="relative z-0 aspect-[3/4] max-h-[28rem] w-full md:absolute md:inset-0 md:aspect-auto md:max-h-none md:min-h-[calc(100svh-65px)]">
           <Image
             src={hero.images.desktop}
             alt={hero.images.alt}
             fill
             priority
             sizes="100vw"
-            className="hidden object-cover object-right md:block"
+            className="hidden object-contain object-right md:block"
           />
           <Image
             src={hero.images.mobile}
@@ -72,9 +75,9 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_20%]"
+            className="object-contain object-center"
           />
-          <div className="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/40 to-transparent md:block" />
+          <div className="absolute inset-0 hidden bg-gradient-to-r from-black/75 via-black/35 to-transparent md:block" />
         </div>
 
         <div className="page-pad relative z-10 hidden min-h-[calc(100svh-65px)] flex-col justify-center pb-24 pt-20 md:flex">

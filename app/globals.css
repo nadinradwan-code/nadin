@@ -160,3 +160,107 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
+.hero-punctuation {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  z-index: 5;
+  overflow: hidden;
+}
+
+.hero-mark-layer {
+  position: absolute;
+  inset: 0;
+}
+
+.hero-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
+  line-height: 1;
+  color: var(--accent);
+  will-change: transform;
+  user-select: none;
+}
+
+.hero-mark-star {
+  font-weight: 700;
+}
+
+.hero-ghost-asterisk {
+  position: absolute;
+  top: 8%;
+  left: -4%;
+  font-family: var(--font-instrument-serif), "Instrument Serif", Georgia, serif;
+  font-size: clamp(140px, 28vw, 340px);
+  line-height: 0.8;
+  color: var(--accent);
+  opacity: 0.1;
+  animation: hero-breathe 8s ease-in-out infinite;
+}
+
+.hero-crop {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  border-color: var(--accent);
+  opacity: 0.55;
+}
+
+.hero-crop-tl {
+  top: 18px;
+  left: 18px;
+  border-top: 1px solid;
+  border-left: 1px solid;
+}
+
+.hero-crop-tr {
+  top: 18px;
+  right: 18px;
+  border-top: 1px solid;
+  border-right: 1px solid;
+}
+
+.hero-crop-bl {
+  bottom: 18px;
+  left: 18px;
+  border-bottom: 1px solid;
+  border-left: 1px solid;
+}
+
+.hero-crop-br {
+  bottom: 18px;
+  right: 18px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+}
+
+@keyframes hero-breathe {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+    opacity: 0.08;
+  }
+  50% {
+    transform: scale(1.06) rotate(8deg);
+    opacity: 0.16;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-mark {
+    color: color-mix(in srgb, var(--accent) 80%, white);
+  }
+
+  .hero-ghost-asterisk {
+    opacity: 0.14;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-ghost-asterisk {
+    animation: none;
+  }
+}
