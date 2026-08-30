@@ -64,7 +64,7 @@ export default function HomePage() {
             fill
             priority
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="hidden object-cover object-top md:block"
+            className="hidden object-cover object-right object-top md:block"
           />
           <Image
             src={hero.images.mobile}

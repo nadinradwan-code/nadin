@@ -80,7 +80,7 @@ export default function Nav() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-[var(--background)]/95 backdrop-blur-sm animate-fade-in safe-top">
+      <header className="sticky top-0 z-50 border-b border-[var(--border)] bg-white animate-fade-in safe-top">
         <nav className="page-pad flex items-center justify-between py-3 sm:py-4">
           <Link
             href="/"
