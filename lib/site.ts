@@ -58,8 +58,8 @@ export const companyBanners = [
   {
     company: "Spitball Advertising",
     logoAlt: "Spitball Advertising",
-    backgroundColor: "#C41E3A",
-    textColor: "#ffffff",
+    backgroundColor: "#87C957",
+    textColor: "#0F0F0F",
   },
 ] as const;
 
