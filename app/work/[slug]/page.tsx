@@ -14,7 +14,7 @@ type Props = {
 
 export function generateStaticParams() {
   return getCaseStudySlugs()
-    .filter((slug) => slug !== "signos-health")
+    .filter((slug) => slug !== "signos-health" && slug !== "cholula")
     .map((slug) => ({ slug }));
 }
 
