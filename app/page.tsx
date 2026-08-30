@@ -64,7 +64,7 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="hidden object-cover object-right md:block"
+            className="hidden object-cover object-right object-top md:block"
           />
           <Image
             src={hero.images.mobile}
@@ -72,7 +72,7 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[center_20%]"
+            className="object-cover object-[center_18%] md:hidden"
           />
           <div className="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/40 to-transparent md:block" />
         </div>
