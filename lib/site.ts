@@ -63,6 +63,15 @@ export const companyBanners = [
   },
 ] as const;
 
+export const tickerItems = [
+  "Brand Systems",
+  "Art Direction",
+  "Product UI",
+  "Campaigns",
+  "AI-Assisted Production",
+  "Creative Direction",
+] as const;
+
 export const hero = {
   nameLine: "I'm Nadin Radwan",
   accentMark: "*",

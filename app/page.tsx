@@ -8,7 +8,7 @@ import { hero, homeAboutTeaser, projects, site } from "@/lib/site";
 function HeroContent() {
   return (
     <div className="max-w-xl">
-      <p className="animate-fade-up mb-5 inline-flex items-center gap-2 rounded-full border border-white/25 bg-black/25 px-3 py-1 text-[11px] tracking-wide text-white/90 backdrop-blur-sm md:border-[var(--border)] md:bg-[var(--background)] md:text-[var(--muted)]">
+      <p className="animate-fade-up mb-5 inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--background)] px-3 py-1 text-[11px] tracking-wide text-[var(--muted)]">
         <span
           aria-hidden="true"
           className="inline-block h-1.5 w-1.5 rounded-full bg-[var(--accent)]"
@@ -16,16 +16,16 @@ function HeroContent() {
         {site.statusPill}
       </p>
 
-      <h1 className="animate-fade-up animate-delay-1 font-serif text-[clamp(40px,8vw,72px)] font-bold leading-[0.95] tracking-[-0.03em] text-[var(--foreground)] md:text-[var(--background)]">
+      <h1 className="animate-fade-up animate-delay-1 font-serif text-[clamp(40px,8vw,72px)] font-bold leading-[0.95] tracking-[-0.03em] text-[var(--foreground)]">
         {hero.nameLine}
         <span className="text-[var(--accent)]">{hero.accentMark}</span>
       </h1>
 
-      <p className="animate-fade-up animate-delay-2 mt-4 font-serif text-xl text-[var(--foreground)] sm:text-2xl md:text-white/90">
+      <p className="animate-fade-up animate-delay-2 mt-4 font-serif text-xl text-[var(--foreground)] sm:text-2xl">
         <span className="text-[var(--accent)]">*</span> {hero.roleLine}
       </p>
 
-      <p className="animate-fade-up animate-delay-3 mt-6 max-w-lg text-sm leading-relaxed text-[var(--muted)] sm:text-base md:text-white/80">
+      <p className="animate-fade-up animate-delay-3 mt-6 max-w-lg text-sm leading-relaxed text-[var(--muted)] sm:text-base">
         {hero.body}
       </p>
 
@@ -34,7 +34,7 @@ function HeroContent() {
           <Link
             key={cta.href}
             href={cta.href}
-            className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-[var(--foreground)] transition-opacity hover:opacity-80 md:text-white"
+            className="inline-flex min-h-11 items-center gap-2 text-sm font-medium text-[var(--foreground)] transition-opacity hover:opacity-80"
           >
             <span className="font-serif text-[var(--accent)]">*</span>
             {cta.label}
@@ -52,7 +52,7 @@ export default function HomePage() {
   return (
     <>
       {/* Mobile: content first, image second. Desktop: full-bleed overlay */}
-      <section className="bg-[var(--background)] md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden md:bg-[var(--foreground)] md:text-[var(--background)]">
+      <section className="bg-[var(--background)] md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden">
         <div className="page-pad flex flex-col pt-28 pb-10 md:hidden">
           <HeroContent />
         </div>
@@ -74,7 +74,7 @@ export default function HomePage() {
             sizes="100vw"
             className="object-cover object-[center_18%] md:hidden"
           />
-          <div className="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/40 to-transparent md:block" />
+          <div className="absolute inset-0 hidden bg-gradient-to-r from-white via-white/70 to-transparent md:block" />
         </div>
 
         <div className="page-pad relative z-10 hidden min-h-[calc(100svh-65px)] flex-col justify-center pb-24 pt-20 md:flex">
