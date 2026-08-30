@@ -46,7 +46,7 @@ export const companyBanners = [
   {
     company: "Conduit Digital",
     logoAlt: "Conduit Digital",
-    backgroundColor: "#1A1A2E",
+    backgroundColor: "#00A8E9",
     textColor: "#ffffff",
   },
   {
