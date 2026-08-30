@@ -57,14 +57,14 @@ export default function HomePage() {
           <HeroContent />
         </div>
 
-        <div className="relative aspect-[4/5] w-full md:absolute md:inset-0 md:aspect-auto md:min-h-[calc(100svh-65px)]">
+        <div className="relative aspect-[3/4] max-h-[34rem] w-full md:absolute md:inset-0 md:aspect-auto md:max-h-none md:min-h-[calc(100svh-65px)]">
           <Image
             src={hero.images.desktop}
             alt={hero.images.alt}
             fill
             priority
             sizes="100vw"
-            className="hidden object-cover object-center md:block"
+            className="hidden object-cover object-right md:block"
           />
           <Image
             src={hero.images.mobile}
@@ -72,7 +72,7 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center"
+            className="object-cover object-[center_20%]"
           />
           <div className="absolute inset-0 hidden bg-gradient-to-r from-black/70 via-black/40 to-transparent md:block" />
         </div>
