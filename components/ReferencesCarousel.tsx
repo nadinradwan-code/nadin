@@ -53,7 +53,7 @@ export default function ReferencesCarousel() {
             References
           </p>
           <div
-            className={`reference-fade min-h-[200px] sm:min-h-[220px] ${
+            className={`reference-fade min-h-[280px] sm:min-h-[320px] ${
               visible ? "reference-fade-active" : "reference-fade-enter"
             }`}
             onTouchStart={onTouchStart}
