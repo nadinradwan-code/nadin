@@ -51,20 +51,20 @@ function HeroContent() {
 export default function HomePage() {
   return (
     <>
-      {/* Mobile: content first, image second. Desktop: full-bleed overlay */}
-      <section className="bg-[var(--background)] md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden">
+      {/* Mobile: content first, image second. Desktop: white field + photo on the right, no fade. */}
+      <section className="bg-white md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden">
         <div className="page-pad flex flex-col pt-28 pb-10 md:hidden">
           <HeroContent />
         </div>
 
-        <div className="relative aspect-[3/4] max-h-[34rem] w-full md:absolute md:inset-0 md:aspect-auto md:max-h-none md:min-h-[calc(100svh-65px)]">
+        <div className="relative aspect-[3/4] max-h-[34rem] w-full md:absolute md:inset-y-0 md:right-0 md:left-auto md:aspect-auto md:max-h-none md:w-1/2 md:min-h-[calc(100svh-65px)]">
           <Image
             src={hero.images.desktop}
             alt={hero.images.alt}
             fill
             priority
-            sizes="100vw"
-            className="hidden object-cover object-right object-top md:block"
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="hidden object-cover object-top md:block"
           />
           <Image
             src={hero.images.mobile}
@@ -74,7 +74,6 @@ export default function HomePage() {
             sizes="100vw"
             className="object-cover object-[center_18%] md:hidden"
           />
-          <div className="absolute inset-0 hidden bg-gradient-to-r from-white via-white/70 to-transparent md:block" />
         </div>
 
         <div className="page-pad relative z-10 hidden min-h-[calc(100svh-65px)] flex-col justify-center pb-24 pt-20 md:flex">
