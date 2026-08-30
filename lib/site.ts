@@ -40,7 +40,7 @@ export const companyBanners = [
   {
     company: "Signos Health",
     logoAlt: "Signos Health",
-    backgroundColor: "#0B3D2E",
+    backgroundColor: "#FD3576",
     textColor: "#ffffff",
   },
   {
