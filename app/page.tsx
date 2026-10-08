@@ -130,14 +130,14 @@ export default function HomePage() {
               alt={homeAboutTeaser.images.alt}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="hidden object-cover lg:block"
+              className="hidden object-cover object-[50%_25%] lg:block"
             />
             <Image
               src={homeAboutTeaser.images.mobile}
               alt={homeAboutTeaser.images.alt}
               fill
               sizes="100vw"
-              className="object-cover lg:hidden"
+              className="object-cover object-[50%_25%] lg:hidden"
             />
           </div>
           <div className="page-pad flex flex-col justify-center py-16 lg:px-16 lg:py-24">

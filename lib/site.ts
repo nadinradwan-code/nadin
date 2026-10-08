@@ -93,9 +93,9 @@ export const homeAboutTeaser = {
   body: "I do my best work on small senior teams where the bar is high and the brief is real. Hands-on, in-the-file, based in Asbury Park, NJ, remote-first, open to hybrid roles.",
   cta: { label: "Full bio", href: "/about" },
   images: {
-    desktop: "/images/home-about.png",
-    mobile: "/images/home-about-mobile.png",
-    alt: "Nadin Radwan at her desk",
+    desktop: "/images/home-about-sofa.jpg",
+    mobile: "/images/home-about-sofa.jpg",
+    alt: "Nadin Radwan on a sofa with her laptop",
   },
 } as const;
 
