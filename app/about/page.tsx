@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { about, site } from "@/lib/site";
 
@@ -11,6 +12,17 @@ export default function AboutPage() {
   return (
     <section className="page-pad py-16 lg:py-24">
       <div className="mx-auto max-w-3xl">
+        <div className="relative mb-12 aspect-[3/4] w-full max-w-sm overflow-hidden">
+          <Image
+            src="/images/headshot.jpg"
+            alt="Portrait of Nadin Radwan"
+            fill
+            priority
+            sizes="(max-width: 640px) 100vw, 384px"
+            className="object-cover"
+          />
+        </div>
+
         <p className="eyebrow mb-3">About</p>
         <h1 className="font-serif text-[clamp(32px,5vw,52px)] font-bold leading-[1.05] tracking-[-0.02em] text-[var(--foreground)]">
           {about.headline}

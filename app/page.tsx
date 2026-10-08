@@ -72,7 +72,7 @@ export default function HomePage() {
             fill
             priority
             sizes="100vw"
-            className="object-cover object-center md:hidden"
+            className="object-cover object-[50%_30%] md:hidden"
           />
         </div>
 

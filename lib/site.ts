@@ -82,9 +82,9 @@ export const hero = {
     { label: "Get in touch", href: "/contact" },
   ],
   images: {
-    desktop: "/images/hero-desktop.png",
-    mobile: "/images/hero-mobile.png",
-    alt: "Nadin Radwan holding two small paintings",
+    desktop: "/images/headshot.jpg",
+    mobile: "/images/headshot.jpg",
+    alt: "Portrait of Nadin Radwan",
   },
 } as const;
 
