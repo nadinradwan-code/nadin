@@ -130,7 +130,7 @@ export default function HomePage() {
               alt={homeAboutTeaser.images.alt}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="hidden object-cover object-[50%_25%] lg:block"
+              className="hidden object-cover object-[50%_30%] lg:block"
             />
             <Image
               src={homeAboutTeaser.images.mobile}
