@@ -49,7 +49,7 @@ export default function ReferencesCarousel() {
     <section className="bg-[var(--foreground)] text-[var(--background)]">
       <div className="page-pad py-16 sm:py-20 lg:py-28">
         <div className="mx-auto max-w-4xl">
-          <p className="mb-8 text-[11px] font-semibold uppercase tracking-[0.1em] text-white/50 sm:mb-10">
+          <p className="mb-8 text-[11px] font-semibold uppercase tracking-[0.1em] text-background/50 sm:mb-10">
             References
           </p>
           <div
@@ -66,7 +66,7 @@ export default function ReferencesCarousel() {
               >
                 “
               </span>
-              <p className="mt-3 font-serif text-[clamp(1.25rem,4.5vw,1.875rem)] leading-snug tracking-tight text-white sm:mt-4">
+              <p className="mt-3 font-serif text-[clamp(1.25rem,4.5vw,1.875rem)] leading-snug tracking-tight text-[var(--background)] sm:mt-4">
                 {current.quote}
               </p>
               <span
@@ -77,9 +77,9 @@ export default function ReferencesCarousel() {
               </span>
             </blockquote>
             <div className="mt-6 sm:mt-8">
-              <p className="text-sm font-semibold text-white">{current.name}</p>
-              <p className="mt-1 text-sm text-white/60">{current.title}</p>
-              <p className="mt-1 text-sm text-white/60">
+              <p className="text-sm font-semibold text-[var(--background)]">{current.name}</p>
+              <p className="mt-1 text-sm text-background/60">{current.title}</p>
+              <p className="mt-1 text-sm text-background/60">
                 {current.relationship}
               </p>
             </div>
@@ -89,7 +89,7 @@ export default function ReferencesCarousel() {
             <button
               type="button"
               onClick={() => go(index - 1)}
-              className="touch-target text-lg text-[var(--accent)] transition-colors hover:text-white"
+              className="touch-target text-lg text-[var(--accent)] transition-colors hover:text-[var(--background)]"
               aria-label="Previous reference"
             >
               ←
@@ -100,13 +100,13 @@ export default function ReferencesCarousel() {
             <button
               type="button"
               onClick={() => go(index + 1)}
-              className="touch-target text-lg text-[var(--accent)] transition-colors hover:text-white"
+              className="touch-target text-lg text-[var(--accent)] transition-colors hover:text-[var(--background)]"
               aria-label="Next reference"
             >
               →
             </button>
           </div>
-          <p className="mt-4 text-xs text-white/45 sm:hidden">
+          <p className="mt-4 text-xs text-background/45 sm:hidden">
             Swipe to browse references
           </p>
         </div>

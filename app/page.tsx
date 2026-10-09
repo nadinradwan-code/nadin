@@ -52,7 +52,7 @@ export default function HomePage() {
   return (
     <>
       {/* Mobile: content first, image second. Desktop: white field + photo on the right, no fade. */}
-      <section className="bg-white md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden">
+      <section className="bg-[var(--background)] md:relative md:min-h-[calc(100svh-65px)] md:overflow-hidden">
         <div className="page-pad flex flex-col pt-28 pb-10 md:hidden">
           <HeroContent />
         </div>

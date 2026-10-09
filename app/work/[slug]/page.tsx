@@ -151,7 +151,7 @@ export default async function CaseStudyPage({ params }: Props) {
               {study.videos.map((video) => (
                 <div key={video.embed}>
                   <p className="mb-3 text-sm text-[var(--muted)]">{video.title}</p>
-                  <div className="relative aspect-video overflow-hidden bg-black">
+                  <div className="relative aspect-video overflow-hidden bg-[var(--foreground)]">
                     <iframe
                       src={video.embed}
                       title={video.title}
